@@ -1,10 +1,10 @@
 ---
 banner:
-  title: Let us solve your critical website development challenges
-  content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil enim maxime corporis cumque <br/> totam aliquid nam sint inventore optio modi neque laborum officiis necessitatibus
+  title: Votre partenaire fiable et économique pour vos travaux d’externalisation
+  content: Expert en outsourcing qui répond à vos besoins sur vos projets d’externalisation tout en respectant votre budget.
   image: /images/banner-art.png
   button:
-    label: "Contact Us"
+    label: "Contactez Nous"
     link: "/contact"
     enable: true
 

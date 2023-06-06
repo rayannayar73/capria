@@ -9,6 +9,20 @@
       "url": "/blog"
     },
     {
+      "name": "Test",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Pricing",
+          "url": "/pricing"
+        },
+        {
+          "name": "Quick Start",
+          "url": "#"
+        }
+      ]
+    },
+    {
       "name": "Pricing",
       "url": "/pricing"
     },
@@ -24,6 +38,7 @@
       "name": "Elements",
       "url": "/elements"
     }
+    
   ],
   "footer": [
     {
