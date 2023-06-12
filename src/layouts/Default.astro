@@ -1,16 +1,44 @@
 ---
+import { Image } from "@astrojs/image/components";
 import { markdownify } from "@lib/utils/textConverter";
 
 const { data } = Astro.props;
 const { title } = data.data;
 const { Content } = await data.render();
+const { image } = data.data;
 ---
-
+<!-- 
 <section class="section">
   <div class="container">
     <h1 set:html={markdownify(title)} class="h2 mb-8 text-center" />
     <div class="content">
       <Content />
+    </div>
+  </div>
+</section> -->
+
+<section class="section">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-12 md:col-10">
+        <article class="text-center">
+          {
+            image && (
+              <Image
+                src={image}
+                height={500}
+                width={1000}
+                alt={title}
+                class="rounded-lg"
+              />
+            )
+          }
+          <h1 set:html={markdownify(title)} class="h2 text-left my-6" />
+          <div class="content mb-16 text-left">
+            <Content />
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 </section>

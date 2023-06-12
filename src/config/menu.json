@@ -1,42 +1,38 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Accueil",
       "url": "/"
     },
     {
-      "name": "Blog",
-      "url": "/blog"
-    },
-    {
-      "name": "Test",
+      "name": "Services",
       "hasChildren": true,
       "children": [
         {
-          "name": "Pricing",
-          "url": "/pricing"
+          "name": "Agency",
+          "url": "/agency"
         },
         {
-          "name": "Quick Start",
+          "name": "Event",
+          "url": "/event"
+        },
+        {
+          "name": "Security",
+          "url": "/security"
+        },
+        {
+          "name": "Technology",
           "url": "#"
         }
       ]
     },
     {
-      "name": "Pricing",
-      "url": "/pricing"
+      "name": "A Propos",
+      "url": "#"
     },
     {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "FAQ",
-      "url": "/faq"
-    },
-    {
-      "name": "Elements",
-      "url": "/elements"
     }
     
   ],
@@ -45,46 +41,37 @@
       "name": "Company",
       "menu": [
         {
+          "text": "A Propos",
+          "url": "#"
+        },
+        {
           "text": "Pricing",
           "url": "/pricing"
         },
         {
           "text": "Quick Start",
-          "url": "#"
+          "url": "faq"
         }
       ]
     },
     {
-      "name": "Product",
+      "name": "Services",
       "menu": [
         {
-          "text": "Features",
+          "text": "Agency",
+          "url": "/agency"
+        },
+        {
+          "text": "Event",
+          "url": "/event"
+        },
+        {
+          "text": "Security",
+          "url": "/security"
+        },
+        {
+          "text": "Technology",
           "url": "#"
-        },
-        {
-          "text": "Platform",
-          "url": "#"
-        },
-        {
-          "text": "Pricing",
-          "url": "/pricing"
-        }
-      ]
-    },
-    {
-      "name": "Support",
-      "menu": [
-        {
-          "text": "FAQ",
-          "url": "/faq"
-        },
-        {
-          "text": "Privacy Policy",
-          "url": "/privacy-policy"
-        },
-        {
-          "text": "Terms & Conditions",
-          "url": "/terms-conditions"
         }
       ]
     }
