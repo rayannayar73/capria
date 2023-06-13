@@ -1,7 +1,7 @@
 ---
 title: Capria Security
 description: "CAPRIA SECURITY    est    un groupement  des   personnels qui assurent la sécurité des gens du monde entiers afin qu’ils peuvent bénéficiers la paix."
-image: "/images/blog-3.jpg"
+image: "/images/banner.jpg"
 date: 2022-06-02T06:00:00+00:00
 draft: false
 ---

@@ -28,7 +28,7 @@
     },
     {
       "name": "A Propos",
-      "url": "#"
+      "url": "/about-us"
     },
     {
       "name": "Contact",
@@ -42,7 +42,7 @@
       "menu": [
         {
           "text": "A Propos",
-          "url": "#"
+          "url": "/about-us"
         },
         {
           "text": "Pricing",

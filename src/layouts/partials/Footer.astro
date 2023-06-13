@@ -9,6 +9,7 @@ import { markdownify } from "@lib/utils/textConverter";
 const {footer_content, copyright} = config.params;
 ---
 
+
 <footer class="section bg-theme-light pb-0">
   <div class="container">
     {/* footer menu */}
@@ -31,7 +32,7 @@ const {footer_content, copyright} = config.params;
         );
       })}
       {/* social icons */}
-      <div class="md-12 sm:col-6 lg:col-3 order-last">
+      <div class="md-12 sm:col-6 lg:col-3">
         <a href="/" aria-label="Bigspring">
           <Image
             src={config.site.logo}
@@ -43,6 +44,15 @@ const {footer_content, copyright} = config.params;
         <p class="mt-3 mb-6" set:html={markdownify(footer_content)}></p>
         <Social source={social} className="social-icons mb-8" />
       </div>
+
+      {/* map */}
+      <div class="md-12 sm:col-6 lg:col-3 order-last">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1026.95233816248!2d47.54010524233373!3d-18.96606734393359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDU3JzU3LjkiUyA0N8KwMzInMjQuOSJF!5e1!3m2!1sen!2smg!4v1686568855719!5m2!1sen!2smg" 
+        height="80%" style="border:0;" 
+        allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
     </div>
     {/* copyright */}
     <div class="border-t border-border py-6">

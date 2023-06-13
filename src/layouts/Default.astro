@@ -1,40 +1,36 @@
 ---
-import { Image } from "@astrojs/image/components";
 import { markdownify } from "@lib/utils/textConverter";
+import { Image } from "@astrojs/image/components";
 
 const { data } = Astro.props;
 const { title } = data.data;
+const { description } = data.data;
 const { Content } = await data.render();
 const { image } = data.data;
 ---
-<!-- 
-<section class="section">
-  <div class="container">
-    <h1 set:html={markdownify(title)} class="h2 mb-8 text-center" />
-    <div class="content">
-      <Content />
-    </div>
+
+<section class="section py-0 position: relative">
+  <div class="position: absolute text-center inset-1/3">
+    <h1
+      class="mx-auto max-w-[600px] font-bold leading-[44px]">{title}<h1/>
+    <p class="mt-5">{description}</p>
   </div>
-</section> -->
+  <Image
+    src={image}
+    alt="workflow image"
+    width={1000}
+    height={450}
+    class={'m-auto'}
+  />
+</section>
 
 <section class="section">
   <div class="container">
     <div class="row justify-center">
       <div class="col-12 md:col-10">
         <article class="text-center">
-          {
-            image && (
-              <Image
-                src={image}
-                height={500}
-                width={1000}
-                alt={title}
-                class="rounded-lg"
-              />
-            )
-          }
           <h1 set:html={markdownify(title)} class="h2 text-left my-6" />
-          <div class="content mb-16 text-left">
+          <div class="content text-left">
             <Content />
           </div>
         </article>

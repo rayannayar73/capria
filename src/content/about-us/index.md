@@ -1,11 +1,33 @@
 ---
-title: "Capria Agency"
-description: "Expert en outsourcing qui répond à vos besoins sur vos projets d’externalisation tout en respectant votre budget."
-image: "/images/banner.jpg"
-date: 2022-04-04T05:00:00Z
-draft: false
+title: "A propos de nous"
+
+# feature
+feature: 
+  title: Nos Valeurs
+  features:
+  - name: "Clean Code"
+    icon: "/images/code.svg"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "Object Oriented"
+    icon: "/images/oop.svg"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "24h Service"
+    icon: "/images/user-clock.svg"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "Value for Money"
+    icon: "/images/love.svg"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "Faster Response"
+    icon: "/images/speedometer.svg"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "Cloud Support"
+    icon: "/images/cloud.svg"
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+
 ---
 
+
+## Qui sommes nous ?
 Capria Agency réalise tous vos travaux de retranscription on audio, la synthèse de vos réunions, la retranscription intégrale de  interviews...
 
 Capria Agency peut jouer le rôle d’un centre de rela on client qui est le point de contact avec votre client, doté de conseillers bien formés et sans accent

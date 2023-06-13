@@ -1,7 +1,7 @@
 ---
 title: Capria Event
 description: "CAPRIA  EVENT qui occupe de la conception d'un événement de A à Z. Il est en charge des préparatifs et de l'organisation logistique et matérielle d'un événement pour un client, particulier ou professionnel, du mariage au séminaire en passant par la réception, l'inauguration"
-image: "/images/blog-2.jpg"
+image: "/images/banner.jpg"
 date: 2022-05-04T05:00:00Z
 draft: false
 ---
