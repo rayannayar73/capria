@@ -1,12 +1,12 @@
 ---
-title: "Contact Us"
+title: "Contactez Nous"
 draft: false
 info: 
-  title: Why you should contact us!
+  title: Pourquoi devriez vous nous contacter!
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
   contacts: 
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "phone: 038 43 430 12"
+    - "Mail: [capriasecur@gmail.com](mailto:capriasecur@gmail.com)"
+    - "Address: II C 06 Bis Ankadinandriana, Antananarivo, Madagascar"
 ---
 

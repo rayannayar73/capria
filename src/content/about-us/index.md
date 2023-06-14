@@ -4,7 +4,7 @@ title: "A propos de nous"
 # feature
 feature: 
   title: Nos Valeurs
-  features:
+  valeurs:
   - name: "Clean Code"
     icon: "/images/code.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
@@ -23,6 +23,48 @@ feature:
   - name: "Cloud Support"
     icon: "/images/cloud.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+
+# feature
+services:
+- title: Capria Event
+  subtitle: Best For Small Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/event"
+
+- title: Capria Security
+  subtitle: Best For Large Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/security"
+
+- title: Capria Agency
+  subtitle: Best For Large Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/agency"
+
+- title: Capria Tech
+  subtitle: Best For Large Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/contact"
 
 ---
 

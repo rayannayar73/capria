@@ -45,12 +45,8 @@
           "url": "/about-us"
         },
         {
-          "text": "Pricing",
-          "url": "/pricing"
-        },
-        {
           "text": "Quick Start",
-          "url": "faq"
+          "url": "/contact"
         }
       ]
     },
