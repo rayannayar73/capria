@@ -22,7 +22,7 @@
         },
         {
           "name": "Technology",
-          "url": "#"
+          "url": "/tech"
         }
       ]
     },
@@ -67,7 +67,7 @@
         },
         {
           "text": "Technology",
-          "url": "#"
+          "url": "/tech"
         }
       ]
     }
