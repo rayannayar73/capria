@@ -64,7 +64,7 @@ services:
     - Time-Critical Services
   button:
     label: Commencer
-    link: "/contact"
+    link: "/tech"
 
 ---
 
