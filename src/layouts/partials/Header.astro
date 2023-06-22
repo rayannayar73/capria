@@ -16,10 +16,9 @@ export interface NavigationLink {
   hasChildren?: boolean;
   children?: ChildNavigationLink[];
 }
-
 const { main }: { main: NavigationLink[] } = menu;
 ---
-<header class="header">
+<header class="header position: fixed w-full" id="header">
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
@@ -126,3 +125,13 @@ const { main }: { main: NavigationLink[] } = menu;
     }
   </nav>
 </header>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      // document.getElementById("header").style.height = "50px";
+    } else {
+      // document.getElementById("header").style.height = "100px";
+    }
+  }
+</script>

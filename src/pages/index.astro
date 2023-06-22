@@ -12,19 +12,12 @@ const { services, workflow, call_to_action } = homepage.data;
 <Base>
 
   <!-- Workflow -->
-  <section class="section py-0 position: relative">
-    <div class="position: absolute text-center inset-1/3">
+  <section class="section py-0">
+    <div class="text-center">
       <h1
         class="mx-auto max-w-[600px] font-bold leading-[44px]">{workflow?.title}<h1/>
       <p class="mt-5">{workflow?.description}</p>
     </div>
-    <Image
-      src={workflow!.image}
-      alt="workflow image"
-      width={1000}
-      height={450}
-      class={'m-auto '}
-    />
   </section>
 
   <!-- Services -->
