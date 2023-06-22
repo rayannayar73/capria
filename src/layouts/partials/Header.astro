@@ -21,7 +21,7 @@ const { main }: { main: NavigationLink[] } = menu;
 <header class="header position: fixed w-full" id="header">
   <nav class="navbar container">
     <!-- logo -->
-    <div class="order-0">
+    <div id="logo-disappear" class="order-0">
       <Logo />
     </div>
     <!-- navbar toggler -->
@@ -54,6 +54,9 @@ const { main }: { main: NavigationLink[] } = menu;
       id="nav-menu"
       class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-3"
     >
+    <!-- <div id="logo-appear" class="opacity-0">
+      <Logo />
+    </div> -->
       {
         main.map((menu) => (
           <>
@@ -113,7 +116,7 @@ const { main }: { main: NavigationLink[] } = menu;
     </ul>
     {
       nav_button.enable && (
-        <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 md:flex md:min-w-[150px] lg:min-w-[200px]">
+        <div id="nav-button-disappear" class="order-1 ml-auto disappear hidden items-center md:order-2 md:ml-0 md:flex md:min-w-[150px] lg:min-w-[200px]">
           <a
             class="btn btn-primary z-0 ml-auto py-[14px]"
             href={nav_button.link}
@@ -127,23 +130,42 @@ const { main }: { main: NavigationLink[] } = menu;
 </header>
 <script>
   window.onscroll = function() {scrollFunction()};
-  var styles = {
+  var styles_header = {
     "height": "4.375rem",
     "z-index": "50",
     "transition": "1s",
     "box-shadow": "0 0 0.5em rgba(0, 0, 0, 0.5)"
   };
-  var initial_styles = {
+  var initial_styles_header = {
     "height": "25rem",
     "z-index": "50",
     "transition": "1s"
   }
+  var disappear_styles = {
+    "opacity": "0",
+    "transition": "1s"
+  };
+  var appear_styles = {
+    "opacity": "1",
+    "transition": "1s"
+  }
   function scrollFunction() {
-    var obj = document.getElementById("header");
+    var header = document.getElementById("header");
+    var nav_button_disappear = document.getElementById("nav-button-disappear");
+    var logo_disappear = document.getElementById("logo-disappear");
+    var logo_appear = document.getElementById("logo-appear");
+    
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      Object.assign(obj.style, styles);
+      Object.assign(header.style, styles_header);
+      Object.assign(nav_button_disappear.style, disappear_styles);
+      Object.assign(logo_disappear.style, disappear_styles);
+      Object.assign(logo_appear.style, appear_styles);
+      
     } else {
-      Object.assign(obj.style, initial_styles);
+      Object.assign(header.style, initial_styles_header);
+      Object.assign(nav_button_disappear.style, appear_styles);
+      Object.assign(logo_disappear.style, appear_styles);
+      Object.assign(logo_appear.style, disappear_styles);
     }
   }
 </script>
