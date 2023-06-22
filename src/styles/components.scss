@@ -10,20 +10,20 @@
 
 // header
 .header{
-  height: 10rem;
+  height: 25rem;
   z-index: 50;
   background: rgb(244,244,244);
   background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(4,0,0,0.5970763305322129) 89%, rgba(255,0,0,0.7959558823529411) 100%);
 }
 
 .header + .main-content {
-  padding-top: 10rem;
+  padding-top: 30rem;
 }
 
 // footer
 .footer{
   background: rgb(244,244,244);
-background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(4,0,0,0.5970763305322129) 83%, rgba(255,0,0,0.7959558823529411) 100%);
+  background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(4,0,0,0.5970763305322129) 83%, rgba(255,0,0,0.7959558823529411) 100%);
 }
 // form style
 .form-inputs * {

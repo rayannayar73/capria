@@ -127,11 +127,22 @@ const { main }: { main: NavigationLink[] } = menu;
 </header>
 <script>
   window.onscroll = function() {scrollFunction()};
+  var styles = {
+    "height": "4.375rem",
+    "z-index": "50",
+    "transition": "1s"
+  };
+  var initial_styles = {
+    "height": "25rem",
+    "z-index": "50",
+    "transition": "1s"
+  }
   function scrollFunction() {
+    var obj = document.getElementById("header");
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      // document.getElementById("header").style.height = "50px";
+      Object.assign(obj.style, styles);
     } else {
-      // document.getElementById("header").style.height = "100px";
+      Object.assign(obj.style, initial_styles);
     }
   }
 </script>
