@@ -1,4 +1,6 @@
 ---
+title: "Capria"
+description: "..."
 banner:
   title: Votre partenaire fiable et économique pour vos travaux d’externalisation
   content: Expert en outsourcing qui répond à vos besoins sur vos projets d’externalisation tout en respectant votre budget.

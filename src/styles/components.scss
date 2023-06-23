@@ -10,14 +10,14 @@
 
 // header
 .header{
-  height: 25rem;
-  z-index: 50;
+  height: 35rem;
+  z-index: 30;
   background: rgb(244,244,244);
-  background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(4,0,0,0.5970763305322129) 89%, rgba(255,0,0,0.7959558823529411) 100%);
+  background: linear-gradient(90deg, rgba(244,244,244,1) 20%, rgba(4,0,0,0.6783088235294117) 97%, rgba(255,0,0,0.700717787114846) 100%);
 }
 
 .header + .main-content {
-  padding-top: 30rem;
+  padding-top: 25rem;
 }
 
 // footer
@@ -25,6 +25,7 @@
   background: rgb(244,244,244);
   background: linear-gradient(90deg, rgba(244,244,244,1) 0%, rgba(4,0,0,0.5970763305322129) 83%, rgba(255,0,0,0.7959558823529411) 100%);
 }
+
 // form style
 .form-inputs * {
   @apply mb-5 leading-10;
