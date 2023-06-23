@@ -17,6 +17,10 @@
           "url": "/event"
         },
         {
+          "name": "Outsourcing",
+          "url": "/outsourcing"
+        },
+        {
           "name": "Security",
           "url": "/security"
         },
@@ -25,6 +29,10 @@
           "url": "/tech"
         }
       ]
+    },
+    {
+      "name": "Recrutement",
+      "url": "#"
     },
     {
       "name": "A Propos",
@@ -60,6 +68,10 @@
         {
           "text": "Event",
           "url": "/event"
+        },
+        {
+          "text": "Outsourcing",
+          "url": "/outsourcing"
         },
         {
           "text": "Security",

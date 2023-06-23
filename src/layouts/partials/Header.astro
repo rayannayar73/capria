@@ -5,6 +5,8 @@ import menu from "@config/menu.json";
 
 const pathname = new URL(Astro.request.url).pathname;
 
+const { title, description } = Astro.props;
+
 export interface ChildNavigationLink {
   name: string;
   url: string;
@@ -16,113 +18,165 @@ export interface NavigationLink {
   hasChildren?: boolean;
   children?: ChildNavigationLink[];
 }
-
 const { main }: { main: NavigationLink[] } = menu;
 ---
-<header class="header">
-  <nav class="navbar container">
-    <!-- logo -->
-    <div class="order-0">
-      <Logo />
-    </div>
-    <!-- navbar toggler -->
-    <input id="nav-toggle" type="checkbox" class="hidden" />
-    <label
-      id="show-button"
-      for="nav-toggle"
-      class="order-2 flex cursor-pointer items-center md:order-1 md:hidden"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
-        <title>Menu Open</title>
-        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
-      </svg>
-    </label>
-    <label
-      id="hide-button"
-      for="nav-toggle"
-      class="order-2 cursor-pointer items-center md:order-1"
-    >
-      <svg class="h-6 fill-current" viewBox="0 0 20 20">
-        <title>Menu Close</title>
-        <polygon
-          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"></polygon>
-      </svg>
-    </label>
-    <!-- /navbar toggler -->
+  <header class="header position: fixed w-full" id="header">
+    <nav class="navbar container">
+      <!-- logo -->
+      <div id="logo-disappear" class="order-0">
+        <Logo width="100px" height="100px"/>
+      </div>
+      <!-- navbar toggler -->
+      <input id="nav-toggle" type="checkbox" class="hidden" />
+      <label
+        id="show-button"
+        for="nav-toggle"
+        class="order-2 flex cursor-pointer items-center md:order-1 md:hidden"
+      >
+        <svg class="h-6 fill-current" viewBox="0 0 20 20">
+          <title>Menu Open</title>
+          <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z"></path>
+        </svg>
+      </label>
+      <label
+        id="hide-button"
+        for="nav-toggle"
+        class="order-2 cursor-pointer items-center md:order-1"
+      >
+        <svg class="h-6 fill-current" viewBox="0 0 20 20">
+          <title>Menu Close</title>
+          <polygon
+            points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
+            transform="rotate(45 10 10)"></polygon>
+        </svg>
+      </label>
+      <!-- /navbar toggler -->
 
-    <ul
-      id="nav-menu"
-      class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-3"
-    >
-      {
-        main.map((menu) => (
-          <>
-            {menu.hasChildren ? (
-              <li class="nav-item nav-dropdown group relative">
-                <span class="nav-link inline-flex items-center">
-                  {menu.name}
-                  <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
-                    <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-                  </svg>
-                </span>
-                <ul class="nav-dropdown-list 
-                  md:block md:invisible md:opacity-0 
-                  group-hover:block md:group-hover:visible md:group-hover:opacity-100"
-                >
-                  {menu.children?.map((child) => (
-                    <li class="nav-dropdown-item">
-                      <a
-                        href={child.url}
-                        class={`nav-dropdown-link block ${
-                          pathname === child.url && "nav-link-active"
-                        }`}
-                      >
-                        {child.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-            ) : (
-              <li class="nav-item">
-                <a
-                  href={menu.url}
-                  class={`nav-link block ${
-                    pathname === menu.url && "nav-link-active"
-                  }`}
-                >
-                  {menu.name}
-                </a>
-              </li>
-            )}
-          </>
-        ))
-      }
+      <ul
+        id="nav-menu"
+        class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-3"
+      >
+        {
+          main.map((menu) => (
+            <>
+              {menu.hasChildren ? (
+                <li class="nav-item nav-dropdown group relative">
+                  <span class="nav-link inline-flex items-center">
+                    {menu.name}
+                    <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                  <ul class="nav-dropdown-list 
+                    md:block md:invisible md:opacity-0 
+                    group-hover:block md:group-hover:visible md:group-hover:opacity-100"
+                  >
+                    {menu.children?.map((child) => (
+                      <li class="nav-dropdown-item">
+                        <a
+                          href={child.url}
+                          class={`nav-dropdown-link block ${
+                            pathname === child.url && "nav-link-active"
+                          }`}
+                        >
+                          {child.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              ) : (
+                <li class="nav-item">
+                  <a
+                    href={menu.url}
+                    class={`nav-link block ${
+                      pathname === menu.url && "nav-link-active"
+                    }`}
+                  >
+                    {menu.name}
+                  </a>
+                </li>
+              )}
+            </>
+          ))
+        }
+        {
+          nav_button.enable && (
+            <div class="block md:hidden">
+              <a
+                class="btn btn-primary z-0 ml-auto py-[14px]"
+                href={nav_button.link}
+              >
+                {nav_button.label}
+              </a>
+            </div>
+          )
+        }
+      </ul>
       {
         nav_button.enable && (
-          <div class="block md:hidden">
-            <a
-              class="btn btn-primary z-0 ml-auto py-[14px]"
-              href={nav_button.link}
-            >
-              {nav_button.label}
-            </a>
+          <div id="nav-button-disappear" class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 md:flex md:min-w-[150px] lg:min-w-[200px]">
           </div>
         )
       }
-    </ul>
-    {
-      nav_button.enable && (
-        <div class="order-1 ml-auto hidden items-center md:order-2 md:ml-0 md:flex md:min-w-[150px] lg:min-w-[200px]">
-          <a
-            class="btn btn-primary z-0 ml-auto py-[14px]"
-            href={nav_button.link}
-          >
-            {nav_button.label}
-          </a>
-        </div>
-      )
+    </nav>
+    <div id="title-section" class="row mt-16 text-left">
+      <div class="col-5 offset-1">
+        <h1
+          class="font-bold leading-[44px] text-left">{title}<h1/>
+        <p class="mt-5">{description}</p>
+        <a class="btn btn-primary z-0 mt-5 py-[14px]" href={nav_button.link}>
+          {nav_button.label}
+        </a>
+      </div>
+      <div class="col-4 offset-1 ">
+        <lottie-player 
+        src="/lottie/57286-laptop-working.json"  
+        background="transparent"  speed="0.15"  style="width: 400px;" 
+        loop autoplay></lottie-player>
+      </div>
+    </div>
+  </header>
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script>
+  window.onscroll = function() {scrollFunction()};
+  var styles_header = {
+    "height": "4.375rem",
+    "z-index": "30",
+    "transition": "1s",
+    "box-shadow": "0 0 0.5em rgba(0, 0, 0, 0.5)"
+  };
+  var initial_styles_header = {
+    "height": "35rem",
+    "z-index": "30",
+    "transition": "1s",
+    "box-shadow": "none"
+  }
+  var disappear_styles = {
+    "opacity": "0",
+    "transition": "1s"
+  };
+  var appear_styles = {
+    "opacity": "1",
+    "transition": "1s"
+  }
+  function scrollFunction() {
+    var header = document.getElementById("header");
+    var nav_button_disappear = document.getElementById("nav-button-disappear");
+    var logo_disappear = document.getElementById("logo-disappear");
+    var title_section = document.getElementById("title-section");
+    
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      Object.assign(header.style, styles_header);
+      Object.assign(nav_button_disappear.style, disappear_styles);
+      Object.assign(logo_disappear.style, disappear_styles);
+      Object.assign(title_section.style, disappear_styles);
+    } else {
+      Object.assign(header.style, initial_styles_header);
+      Object.assign(nav_button_disappear.style, appear_styles);
+      Object.assign(logo_disappear.style, appear_styles);
+      Object.assign(title_section.style, appear_styles);
     }
-  </nav>
-</header>
+  }
+</script>

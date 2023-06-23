@@ -4,7 +4,7 @@ import Cta from "@layouts/components/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 import Default from "@layouts/Default.astro";
 
-const entry = await getEntryBySlug("tech", "index");
+const entry = await getEntryBySlug("outsourcing", "index");
 const { title, meta_title, description, image } = entry.data;
 
 const cta = await getEntryBySlug("homepage", "index");

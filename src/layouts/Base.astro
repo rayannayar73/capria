@@ -138,8 +138,11 @@ const { title, meta_title, description, image, noindex, canonical } =
   </head>
   <body>
     <TwSizeIndicator />
-    <Header />
-    <main id="main-content">
+    <Header 
+      title={title}
+      description={description}
+    />
+    <main id="main-content" class="main-content">
       <slot />
     </main>
     <Footer />
