@@ -1,5 +1,5 @@
 ---
-title: "Capria"
+title: "Groupe Capria"
 description: "..."
 banner:
   title: Votre partenaire fiable et économique pour vos travaux d’externalisation
@@ -12,15 +12,15 @@ banner:
 
 # services
 services:
-  - title: "Capria Security vous protège avec nos agents et forces de l'ordre."
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+  - title: "Capria Security"
+    content: "Filiale du Groupe CAPRIA créée en 2022, CAPRIA Security est une agence de sécurité privée intervient dans les domaines de la Sûreté / Sécurité et de la protection rapprochée sis à Antananarivo."
     images:
       - "/images/security/siren.png"
       - "/images/security/police-dog.png"
       - "/images/security/police-car.png"
     button:
       enable: true
-      label: Check it out
+      label: Consulter
       link: /security
 
   - title: "Capria Agency"
@@ -30,11 +30,11 @@ services:
       - "/images/agency/outsourcing.png"
     button:
       enable: true
-      label: Check it out
+      label: Consulter
       link: /agency
   
   - title: "Capria Tech"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+    content: "Filiale du Groupe CAPRIA crée en 2022, CAPRIA TECH est une agence digitale qui dans le domaine du Web, Programmation, Developpement d'application, Maintenance Informatique, Systeme et Reseau."
     images:
       - "/images/tech/app-settings.png"
       - "/images/tech/app.png"
@@ -42,7 +42,7 @@ services:
       - "/images/tech/web-development.png"
     button:
       enable: true
-      label: Check it out
+      label: Consulter
       link: /contact
 
 
@@ -56,10 +56,18 @@ services:
       - "/images/event/wedding-rings.png"
     button:
       enable: true
-      label: Check it out
+      label: Consulter
       link: /event
 
 
+  - title: "Capria Outsourcing"
+    content: "Expert en outsourcing, Capria répond à vos besoins sur vos projets d'externalisation en respectant votre budget. Nous vous proposons une équipe d'experts ayant au moins 5 ans d'expérience dans chaque domaine. Chacun excelle brillamment dans chaque métier et possède de solide référence au niveau international"
+    images:
+      - "/images/event/billboard.png"
+    button:
+      enable: true
+      label: Consulter
+      link: /event
 # workflow
 workflow: 
   title: "Experience the best workflow with us"
