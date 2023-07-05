@@ -43,7 +43,7 @@ services:
     button:
       enable: true
       label: Consulter
-      link: /contact
+      link: /tech
 
 
   - title: "Capria Event"
@@ -67,7 +67,7 @@ services:
     button:
       enable: true
       label: Consulter
-      link: /event
+      link: /outsourcing
 # workflow
 workflow: 
   title: "Experience the best workflow with us"
