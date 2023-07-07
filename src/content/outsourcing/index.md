@@ -4,6 +4,49 @@ description: "Expert en outsourcing qui répond à vos besoins sur vos projets d
 image: "/images/banner.jpg"
 date: 2022-04-04T05:00:00Z
 draft: false
+
+# feature
+services:
+- title: Capria Event
+  subtitle: Best For Small Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/event"
+
+- title: Capria Security
+  subtitle: Best For Large Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/security"
+
+- title: Capria Agency
+  subtitle: Best For Large Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/agency"
+
+- title: Capria Tech
+  subtitle: Best For Large Individuals
+  features:
+    - Express Service
+    - Customs Clearance
+    - Time-Critical Services
+  button:
+    label: Commencer
+    link: "/tech"
+
 ---
 
 Capria Outsourcing réalise tous vos travaux de retranscription on audio, la synthèse de vos réunions, la retranscription intégrale de  interviews...

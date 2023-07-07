@@ -2,21 +2,52 @@
 import { markdownify } from "@lib/utils/textConverter";
 
 const { data } = Astro.props;
-const { title } = data.data;
+const { title, services } = data.data;
 const { Content } = await data.render();
 ---
 
-<section class="section " >
-  <div class="container">
-    <div class="row justify-center">
-      <div class="col-12 md:col-10">
-        <article class="text-center">
-          <h1 set:html={markdownify(title)} class="h2 text-left my-6" />
-          <div class="content text-left">
-            <Content />
-          </div>
-        </article>
+  <section class="section " >
+    <div class="container">
+      <div class="row justify-center">
+        <div class="col-12 md:col-10">
+          <article class="text-center">
+            <h1 set:html={markdownify(title)} class="h2 text-left my-6" />
+            <div class="content text-left">
+              <Content />
+            </div>
+          </article>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- Services -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-center ">
+        {
+          services?.map((service) => (
+            <div
+              class={`col-12 md:col-4 hover:col-recommended group`}
+            >
+              <div class="card text-center border-none">
+                <h4>{service.title}</h4>
+                <h5 class="mt-5 font-normal text-text">{service.subtitle}</h5>
+                <ul class="mt-5">
+                  {service?.features?.map((feature, index) => (
+                    <li class="mb-[10px] leading-5">{feature}</li>
+                  ))}
+                </ul>
+                <a
+                  class={`btn mt-5 btn-outline-primary group-hover:btn-primary`}
+                  href={service.button.link}
+                >
+                  {service.button.label}
+                </a>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>

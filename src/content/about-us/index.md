@@ -24,47 +24,25 @@ feature:
     icon: "/images/cloud.svg"
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
 
-# feature
-services:
-- title: Capria Event
-  subtitle: Best For Small Individuals
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Commencer
-    link: "/event"
-
-- title: Capria Security
-  subtitle: Best For Large Individuals
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Commencer
-    link: "/security"
-
-- title: Capria Agency
-  subtitle: Best For Large Individuals
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Commencer
-    link: "/agency"
-
-- title: Capria Tech
-  subtitle: Best For Large Individuals
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Commencer
-    link: "/tech"
+teams:
+  - name: Admins
+    description: Les fondateurs et co-fondateurs
+    image: /images/capria-admin.jpg
+  - name: Capria Event
+    description: Pour l'organisation de vos évènements
+    image: /images/capria4.jpg
+  - name: Capria Agency
+    description: Une équipe déterminée
+    image: /images/capria3.jpg
+  - name: Capria Security
+    description: Ceux qui vous protègent
+    image: /images/capria5.jpg
+  - name: Capria Tech
+    description: Les talentueux de la téchnologie
+    image: /images/capria2.jpg
+  - name: Capria Outsourcing
+    description: Les travailleurs acharnés
+    image: /images/capria6.jpg
 
 ---
 

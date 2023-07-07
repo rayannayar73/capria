@@ -4,8 +4,12 @@ import { markdownify } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 const entry = await getEntryBySlug("about-us", "index");
 const { Content } = await entry.render();
-const { feature, services } = entry.data;
+const { feature, teams } = entry.data;
+
 ---
+<style>
+  @import "../styles/image-gallery.css";
+</style>
 
 <Base title={entry.data.title}>
 
@@ -23,7 +27,7 @@ const { feature, services } = entry.data;
   </section>
 
   <!-- Features -->
-  <section class="section bg-theme-light">
+<section class="section bg-theme-light">
     <div class="container">
       <div class="text-center">
         <h2>{markdownify(feature!.title)}</h2>
@@ -52,34 +56,23 @@ const { feature, services } = entry.data;
     </div>
   </section>
 
-  <!-- Services -->
-  <section class="section">
-    <div class="container">
-      <div class="row justify-center ">
+  <article class="flow text-center">
+    <h2>Notre équipe</h2>
+    <p>Voici toute l'équipe du groupe Capria qui vous accueilleront chaleureusement avec un grand sourire.</p>
+    <div class="team">
+      <ul class="auto-grid" role="list">
         {
-          services?.map((service) => (
-            <div
-              class={`col-12 md:col-3 hover:col-recommended group`}
-            >
-              <div class="card text-center">
-                <h4>{service.title}</h4>
-                <h5 class="mt-5 font-normal text-text">{service.subtitle}</h5>
-                <ul class="mt-5">
-                  {service?.features?.map((feature, index) => (
-                    <li class="mb-[10px] leading-5">{feature}</li>
-                  ))}
-                </ul>
-                <a
-                  class={`btn mt-5 btn-outline-primary group-hover:btn-primary`}
-                  href={service.button.link}
-                >
-                  {service.button.label}
-                </a>
-              </div>
-            </div>
+          teams?.map((team, i) => (
+            <li>
+              <a class="profile">
+                <h2 class="text-white profile__name">{team.name}</h2>
+                <p>{team.description}</p>
+                <img alt={team.name} src={team.image} />
+              </a>
+            </li>
           ))
         }
-      </div>
+      </ul>
     </div>
-  </section>
-</Base>
+  </article>
+</Base> 
