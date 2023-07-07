@@ -1,30 +1,54 @@
 ---
 title: Capria Event
-description: "CAPRIA  EVENT qui occupe de la conception d'un événement de A à Z. Il est en charge des préparatifs et de l'organisation logistique et matérielle d'un événement pour un client, particulier ou professionnel, du mariage au séminaire en passant par la réception, l'inauguration"
+description: "Nous nous occupons de la conception et l'organisation de vos événement, de location de voiture et aussi de préstation d'animateur, animatrice."
+
 image: "/images/banner.jpg"
 date: 2022-05-04T05:00:00Z
 draft: false
+
+# feature
+services:
+- title: ORGANISATION D’EVENEMENT
+  subtitle: Pour un client, particulier ou professionnel
+  features:
+    - Mariage
+    - Séminaire
+    - Evénement Sportif ou Culturel
+  button:
+    label: Commencer
+    link: "/contact"
+
+- title: LOCATION DE VOITURE
+  subtitle: Pour vos vacances, aller à un événement, rencontre d’affaires
+  features:
+    - Chauffeur professionnel
+    - En ville ou péripherique
+    - Voitures propres et confortables 
+    - Tarifs variables
+  button:
+    label: Commencer
+    link: "/contact"
+
+- title: ANIMATEUR, ANIMATRICE
+  subtitle: Organiser et de conduire des projets d’animation
+  features:
+    - Animation des activités
+    - Jeux et présentations
+    - Tous types d’événements
+  button:
+    label: Commencer
+    link: "/contact"
+
 ---
+Nous nous occupons de la conception et **l'organisation de vos événement** de A à Z. Nous sommes en charge 
+- les préparatifs
+- l’organisation logistique et matérielle
 
-CAPRIA  EVENT qui occupe de la conception d'un événement de A à Z. Il est en charge des préparatifs et de l'organisation logistique et matérielle d'un événement pour un client, particulier ou professionnel, du mariage au séminaire en passant par la réception, l'inauguration, etc.
+Pour un client, particulier ou professionnel, du mariage au séminaire en passant par la réception, l’inauguration, etc.
 
-CAPRIA  EVENT   prend en charge la création et organisation événementielle : socio-économique, culturelle, sportive..
 
-#### LOCATION  DE  VOITUTRE
+Vous souhaitez **louer une voiture** pour vos vacances, vos sorties touristiques, aller à un mariage ou une rencontre d’affaires, faire de la publicité ou pour tout autre déplacement ?
+Nous avons l’offre qu’il vous faut quel que soit le type et modèle de voiture que vous voulez !
 
-Vous souhaitez loue de voiture pour vacances sortie touristique mariage rencontre d’affaires publicité ou  pour tout autre déplacement nous avons l’offre qu’il vous faut quel que soit le type et modèle de voiture que vous voulez ! Location disponible avec chauffeur professionnel, gentillet courtois, notre tarif est très intéressant, alors n’hésitez plus, venez directement en message prive pour plus d’informations l’équipe reste à votre disposition pour tout renseignement complémentaire.
 
-A louer avec chauffeur …..(……)
-Disponible pour location en ville et peripherique.province à discuter
-Disponible pour tout évènement (mariage, funérailles,...)
-Voiture puissant, économique,
-Propre, climatisée et confortable
-Prix selon durée et trajet
-Encore plusieurs dates disponibles pour les mois à venir
-
-#### ANIMATEUR, ANIMATRICE, ORGANISATEUR
-
-Nous pouvons consister à concevoir, développer, organiser et conduire des projets d'animation visant à l'épanouissement, la socialisation et l'autonomie des personnes en prenant en compte leur environnement.
-
-Les animateurs et les animatrices chez CAPRIA sont généralement chargé de l'animation des activités, jeux et présentations proposés au public, sur tous types d'événements : mariages, anniversaires, salons, conférences, etc. Nous  pouvons créer des liens entre les intervenants que nous coordonnons et à qui nous distribuons le droit de parole.
-Nous pouvons planifier réaliser l’organisation d’évènement professionnel pour  qu’il  réussit
+Nous vous offrons la possibilité de développer, d’organiser et de conduire **des projets d’animation** visant à l’épanouissement, la socialisation et l’autonomie des personnes en prenant en compte leur environnement.
