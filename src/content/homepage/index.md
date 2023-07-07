@@ -25,7 +25,7 @@ services:
   - title: "Capria Security"
     content: "Filiale du Groupe CAPRIA créée en 2022, CAPRIA Security est une agence de sécurité privée intervient dans les domaines de la Sûreté / Sécurité et de la protection rapprochée sis à Antananarivo."
     images:
-      - "/images/security/police-dog.png"
+      - "/images/security/police-dog.jpg"
     button:
       enable: true
       label: Consulter
