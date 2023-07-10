@@ -7,57 +7,55 @@ draft: false
 
 # feature
 services:
-- title: Capria Event
+- title: Service Clientèle
   subtitle: Best For Small Individuals
   features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
+    - Support commercial
+    - Suivi de commande
+    - Standard externalisé
+    - Support technique
   button:
     label: Commencer
-    link: "/event"
+    link: "/contact"
 
-- title: Capria Security
+- title: Téléprospection B2B / B2
+  subtitle: Télévente, prospection
+  features:
+    - Satisfaction client
+    - Prise de rendez-vous
+    - détection de projet
+    - Sondage
+  button:
+    label: Commencer
+    link: "/contact"
+
+- title: Back Office
   subtitle: Best For Large Individuals
   features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
+    - Qualification de fichier
+    - Collecte de donnée
+    - Modération de contencue
+    - Transcription audio, Saisie de données
   button:
     label: Commencer
-    link: "/security"
+    link: "/contact"
 
-- title: Capria Agency
+- title: Assistanat/Télésecrétariat Médicale
   subtitle: Best For Large Individuals
   features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
+    - Assistant virtuel externalisé
+    - Personal digital assistant
+    - Secrétariat médical à distance
   button:
     label: Commencer
-    link: "/agency"
-
-- title: Capria Tech
-  subtitle: Best For Large Individuals
-  features:
-    - Express Service
-    - Customs Clearance
-    - Time-Critical Services
-  button:
-    label: Commencer
-    link: "/tech"
+    link: "/contact"
 
 ---
 
-Capria Outsourcing réalise tous vos travaux de retranscription on audio, la synthèse de vos réunions, la retranscription intégrale de  interviews...
+Nous vous proposons une équipe d'experts ayant au moins 5 ans d'expérience dans chaque domaine. Chacun excelle brillamment dans chaque métier et possède de solide référence au niveau international.
 
-Capria Outsourcing peut jouer le rôle d’un centre de rela on client qui est le point de contact avec votre client, doté de conseillers bien formés et sans accent
+#### Nos engagements
 
-#### BUSINESS PROCESS OUTSOURCING
-
-Capria Outsourcing s’occupe de toutes vos prises de rendez-vous, de la ges on de votre agenda, de la réserva on de votre vol ou de votre hôtel, de la rédac on de vos courriers
-
-> Nous avons une jeune équipe dynamique et expérimentée. Nous vous offrons une solu on sur mesure adaptée à vos besoins et  à votre budget. Notre presta on de qualité et dans le respect des deadlines vous assure un résultat plus
-que satisfaisant.
-
-Nous vous proposons une équipe d’experts ayant au moins 5 ans d’expérience dans chaque domaine. Chacun excelle brillamment dans  mé er et possède de solide référence au niveau international
+- Respect du cahier des charges
+- Solution personnalisée selon les besoins du clients 
+- Meilleure rapport qualité-prix sur le marché
