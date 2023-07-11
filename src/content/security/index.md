@@ -1,9 +1,7 @@
 ---
 title: Capria Security
+secondtitle: La meilleure équipe de sécurité
 description: "CAPRIA SECURITY veille à la sécurité des biens et des personnes sur un périmètre déterminé. Les responsables sont présents 24h/24 pour un conseil et nous sommes entièrement à l’écoute des clients."
-image: "/images/banner.jpg"
-date: 2022-06-02T06:00:00+00:00
-draft: false
 
 # feature
 services:
@@ -61,10 +59,15 @@ services:
     label: Commencer
     link: "/contact"
 ---
-CAPRIA SECURITY est un vivier de ressources qui peuvent assurent la sécurité des gens partout dans le monde et de plusieurs manières
+#### Qui sommes Nous ?
+CAPRIA SECURITY est un vivier de ressources qui assurent la sécurité des gens partout dans le monde et de plusieurs manières.
+
 Le développement de **CAPRIA** repose sur une stratégie d’implantation d’agences au niveau national. Cette stratégie permet d’offrir à notre clientèle des prestations de proximité de très haute qualité.
 
-CAPRIA SECURITY veille à la **sécurité** des biens et des personnes sur un périmètre déterminé tout en assurant des missions de surveillance, de protection et de **géolocalisation**. Le métier d’agent de sécurité repose sur la surveillance de locaux ou de bâtiments tels que les bureaux, des hangars, les parkings souterrains ou les magasins…
-Les responsables sont présents 24h/24 pour un conseil et nous sommes entièrement à l’écoute des clients
+> Avec le PACK CAPRIA SECURITY : chez vous un **bouton panique** relié à notre Control Room. Si vous avez une urgence **(agression, vol, incendie, santé.)**, vous appuyez et nous intervenons immédiatement.
 
-Avec le PACK CAPRIA SECURITY : chez vous un **bouton panique** relié à notre Control Room. Si vous avez une urgence **(agression, vol, incendie, santé.)**, vous appuyez et nous intervenons immédiatement.
+
+#### Nos Engagements
+CAPRIA SECURITY veille à la **sécurité** des biens et des personnes sur un périmètre déterminé tout en assurant des missions de surveillance, de protection et de **géolocalisation**. Le métier d’agent de sécurité repose sur la surveillance de locaux ou de bâtiments tels que les bureaux, des hangars, les parkings souterrains ou les magasins…
+
+Les responsables sont présents 24h/24 pour un conseil et nous sommes entièrement à l’écoute des clients.

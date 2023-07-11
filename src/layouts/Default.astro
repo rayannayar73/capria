@@ -2,7 +2,7 @@
 import { markdownify } from "@lib/utils/textConverter";
 
 const { data } = Astro.props;
-const { title, services } = data.data;
+const { title, secondtitle, services } = data.data;
 const { Content } = await data.render();
 ---
 
@@ -11,7 +11,7 @@ const { Content } = await data.render();
       <div class="row justify-center">
         <div class="col-12 md:col-10">
           <article class="text-center">
-            <h1 set:html={markdownify(title)} class="h2 text-left my-6" />
+            <h2 set:html={markdownify(secondtitle)} class="text-left my-6" />
             <div class="content text-left">
               <Content />
             </div>
@@ -24,6 +24,8 @@ const { Content } = await data.render();
   <!-- Services -->
   <section class="section">
     <div class="container">
+      <h3 class="text-center my-6">Nos Services</h3>
+      <p class="text-center mb-10">Le département {title} dispose de plusieurs services pour offrir un large choix à ses clients.</p>
       <div class="row justify-center ">
         {
           services?.map((service) => (
