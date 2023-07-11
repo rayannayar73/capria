@@ -1,19 +1,16 @@
 ---
 title: "Capria Outsourcing"
+secondtitle: "La meilleure équipe de délocalisation"
 description: "Expert en outsourcing qui répond à vos besoins sur vos projets d’externalisation tout en respectant votre budget."
-image: "/images/banner.jpg"
-date: 2022-04-04T05:00:00Z
-draft: false
 
 # feature
 services:
 - title: Service Clientèle
-  subtitle: Best For Small Individuals
+  subtitle: Assistance, accompagnement et conseil
   features:
     - Support commercial
-    - Suivi de commande
-    - Standard externalisé
     - Support technique
+    - Suivi de commande
   button:
     label: Commencer
     link: "/contact"
@@ -23,14 +20,14 @@ services:
   features:
     - Satisfaction client
     - Prise de rendez-vous
-    - détection de projet
+    - Détection de projet
     - Sondage
   button:
     label: Commencer
     link: "/contact"
 
 - title: Back Office
-  subtitle: Best For Large Individuals
+  subtitle: Externalisation du back office
   features:
     - Qualification de fichier
     - Collecte de donnée
@@ -41,7 +38,7 @@ services:
     link: "/contact"
 
 - title: Assistanat/Télésecrétariat Médicale
-  subtitle: Best For Large Individuals
+  subtitle: Accueil téléphonique de la patientèle
   features:
     - Assistant virtuel externalisé
     - Personal digital assistant
@@ -52,9 +49,10 @@ services:
 
 ---
 
+### Une équipe solide
 Nous vous proposons une équipe d'experts ayant au moins 5 ans d'expérience dans chaque domaine. Chacun excelle brillamment dans chaque métier et possède de solide référence au niveau international.
 
-#### Nos engagements
+### Nos engagements
 
 - Respect du cahier des charges
 - Solution personnalisée selon les besoins du clients 

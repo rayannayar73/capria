@@ -60,7 +60,7 @@ const { main }: { main: NavigationLink[] } = menu;
           main.map((menu) => (
             <>
               {menu.hasChildren ? (
-                <li class="nav-item nav-dropdown group relative">
+                <li class="nav-item nav-dropdown group relative mx-5">
                   <span class="nav-link inline-flex items-center">
                     {menu.name}
                     <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
@@ -76,7 +76,7 @@ const { main }: { main: NavigationLink[] } = menu;
                       <li class="nav-dropdown-item">
                         <a
                           href={child.url}
-                          class={`nav-dropdown-link block mx-5 my-2 ${
+                          class={`nav-dropdown-link block px-5 my-2 ${
                             pathname === child.url && "nav-link-active"
                           }`}
                         >
@@ -87,7 +87,7 @@ const { main }: { main: NavigationLink[] } = menu;
                   </ul>
                 </li>
               ) : (
-                <li class="nav-item">
+                <li class="nav-item mx-5">
                   <a
                     href={menu.url}
                     class={`nav-link block ${
