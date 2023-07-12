@@ -2,6 +2,7 @@
 title: "Capria Outsourcing"
 secondtitle: "La meilleure équipe de délocalisation"
 description: "Expert en outsourcing qui répond à vos besoins sur vos projets d’externalisation tout en respectant votre budget."
+image: "/images/capria4.jpg"
 
 # feature
 services:

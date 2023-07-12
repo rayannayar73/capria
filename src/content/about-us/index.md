@@ -1,6 +1,7 @@
 ---
 title: "A propos de nous"
-
+image: "/images/capria-admin.jpg"
+description : "Nous allons vous présenter les équipes qui constituent le Groupe Capria"
 # feature
 feature: 
   title: Nos Valeurs

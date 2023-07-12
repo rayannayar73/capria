@@ -6,10 +6,10 @@ import { getEntryBySlug } from "astro:content";
 
 const entry = await getEntryBySlug("contact", "index");
 const { contact_form_action } = config.params;
-const { title, description, info } = entry?.data;
+const { title, description, info, image } = entry?.data;
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} image={image}>
   <section class="section">
     <div class="container">
       <h1 class="text-center font-normal" set:html={markdownify(title)} />

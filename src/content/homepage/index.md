@@ -1,6 +1,7 @@
 ---
 title: "Groupe Capria"
 description: "Nous sommes un groupe qui fourni plusieurs services dans différents secteurs d'activités. Nous facilitons vos tâches grace à notre équipe jeune et dynamique."
+image: "/images/capria-admin.jpg"
 banner:
   title: Votre partenaire fiable et économique pour vos travaux d’externalisation
   content: Expert en outsourcing qui répond à vos besoins sur vos projets d’externalisation tout en respectant votre budget.

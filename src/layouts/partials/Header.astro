@@ -5,7 +5,7 @@ import menu from "@config/menu.json";
 
 const pathname = new URL(Astro.request.url).pathname;
 
-const { title, description } = Astro.props;
+const { title, description, image } = Astro.props;
 
 export interface ChildNavigationLink {
   name: string;
@@ -20,7 +20,8 @@ export interface NavigationLink {
 }
 const { main }: { main: NavigationLink[] } = menu;
 ---
-  <header class="header position: fixed w-full" id="header">
+  <header class="header position: fixed w-full" 
+          style={`background-image: linear-gradient(60deg, rgba(244,244,244,1) 19%, rgba(4,0,0,0.6783088235294117) 87%, rgba(255,0,0,0.700717787114846) 100%), url(${image})`} id="header">
     <nav class="navbar container">
       <!-- logo -->
       <div id="logo-disappear" class="order-0">
@@ -130,13 +131,5 @@ const { main }: { main: NavigationLink[] } = menu;
           {nav_button.label}
         </a>
       </div>
-      <div class="col-4 offset-1 ">
-        <lottie-player 
-        src="/lottie/57286-laptop-working.json"  
-        background="transparent"  speed="0.15"  style="width: 400px;" 
-        loop autoplay></lottie-player>
-      </div>
     </div>
   </header>
-
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

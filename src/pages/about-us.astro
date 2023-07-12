@@ -4,20 +4,20 @@ import { markdownify } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 const entry = await getEntryBySlug("about-us", "index");
 const { Content } = await entry.render();
-const { feature, teams } = entry.data;
+const { feature, teams, title, description, image } = entry.data;
 
 ---
 <style>
   @import "../styles/image-gallery.css";
 </style>
 
-<Base title={entry.data.title}>
+<Base title={title} description={description} image={image}>
 
   <section class="section">
     <div class="container">
       <div class="flex items-center row justify-center">
         <div class="col-12 md:col-10">
-          <h1 class="mb-4 text-left my-6" set:html={markdownify(entry.data.title)} />
+          <h1 class="mb-4 text-left my-6" set:html={markdownify(title)} />
           <div class="content mb-16 text-left">
             <Content />
           </div>
