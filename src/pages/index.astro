@@ -5,10 +5,10 @@ import Cta from "@layouts/components/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 
 const homepage = await getEntryBySlug("homepage", "index");
-const { services, workflow, call_to_action, title, description } = homepage.data;
+const { services, workflow, call_to_action, title, description, image } = homepage.data;
 ---
 
-<Base title={title} description={description}>
+<Base title={title} description={description} image={image}>
 
   <!-- Workflow -->
   <section class="section">

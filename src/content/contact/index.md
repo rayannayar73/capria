@@ -1,6 +1,6 @@
 ---
 title: "Contactez Nous"
-draft: false
+image: "/images/capria-admin.jpg"
 info: 
   title: Pourquoi devriez vous nous contacter!
   description: Le Groupe CAPRIA est un jeune start-up dirigé par une équipe dynamique et féru de technologie. Votre choix de nous contacter est le premier pas pour trouver une solution à vos demandes.

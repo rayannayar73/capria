@@ -1,8 +1,7 @@
 ---
 title: Capria Tech
 description: "L'équipe de CAPRIA Tech vise à la réalisation de vos projets informatiques (sites web, application mobiles, logiciels), à la maintenance et la réparation de vos matériels. Elle va aussi travailler pour l'administration et la sécurité de votre réseau."
-image: "/images/banner.jpg"
-draft: false
+image: "/images/capria6.jpg"
 
 # feature
 services:
