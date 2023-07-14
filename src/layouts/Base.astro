@@ -150,7 +150,6 @@ const { title, meta_title, description, image, noindex, canonical } =
   </body>
 </html>
 <script>
-  window.onscroll = function() {scrollFunction()};
   var styles_header = {
     "height": "4.375rem",
     "transition": "1s",
@@ -178,14 +177,15 @@ const { title, meta_title, description, image, noindex, canonical } =
     "transition": "1s"
   }
 
+  const header = document.getElementById("header");
+  const nav_button_disappear = document.getElementById("nav-button-disappear");
+  const logo_disappear = document.getElementById("logo-disappear");
+  const title_section = document.getElementById("title-section");
+  const main_content = document.getElementById("main-content");
+  const navToggle = document.getElementById("nav-toggle");
+
   function scrollFunction() {
-    var header = document.getElementById("header");
-    var nav_button_disappear = document.getElementById("nav-button-disappear");
-    var logo_disappear = document.getElementById("logo-disappear");
-    var title_section = document.getElementById("title-section");
-    var main_content = document.getElementById("main-content");
-    
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && !navToggle.checked) {
       Object.assign(header.style, styles_header);
       Object.assign(nav_button_disappear.style, disappear_styles);
       Object.assign(logo_disappear.style, disappear_styles);
@@ -199,4 +199,18 @@ const { title, meta_title, description, image, noindex, canonical } =
       Object.assign(main_content.style, pt_after);
     }
   }
+  
+  function addBackground() {
+    if (navToggle.checked) {
+      header.style.height = "100%";
+      logo_disappear.style.opacity = "1";
+    } else {
+      header.style.height = "4.375rem";
+      logo_disappear.style.opacity = "0";
+      title_section.style.opacity = "0";
+    }
+  }
+
+  navToggle.onchange = function() {addBackground()};
+  window.onscroll = function() {scrollFunction()};
 </script>
