@@ -9,10 +9,6 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Agency",
-          "url": "/agency"
-        },
-        {
           "name": "Event",
           "url": "/event"
         },
@@ -38,7 +34,7 @@
       "name": "Contact",
       "url": "/contact"
     }
-    
+
   ],
   "footer": [
     {
@@ -57,10 +53,6 @@
     {
       "name": "Services",
       "menu": [
-        {
-          "text": "Agency",
-          "url": "/agency"
-        },
         {
           "text": "Event",
           "url": "/event"

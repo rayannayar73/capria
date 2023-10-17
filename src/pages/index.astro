@@ -31,7 +31,7 @@ const { services, workflow, call_to_action, title, description, image } = homepa
                 <Image
                   class="mx-auto"
                   src={service!.images![0]}
-                  width={238}
+                  width={338}
                   height={238}
                   alt=""
                 />
@@ -46,7 +46,7 @@ const { services, workflow, call_to_action, title, description, image } = homepa
                 {service?.button?.enable && (
                   <a
                     href={service?.button.link}
-                    class="cta-link inline-flex items-center text-primary"
+                    class="inline-flex items-center cta-link text-primary"
                   >
                     {service?.button.label}
                     <img

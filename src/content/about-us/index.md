@@ -26,15 +26,9 @@ feature:
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
 
 teams:
-  - name: Admins
-    description: Les fondateurs et co-fondateurs
-    image: /images/capria-admin.jpg
   - name: Capria Event
     description: Pour l'organisation de vos évènements
     image: /images/capria4.jpg
-  - name: Capria Agency
-    description: Une équipe déterminée
-    image: /images/capria3.jpg
   - name: Capria Security
     description: Ceux qui vous protègent
     image: /images/capria5.jpg

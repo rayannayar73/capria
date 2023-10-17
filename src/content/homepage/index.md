@@ -26,38 +26,29 @@ services:
   - title: "Capria Security"
     content: "Filiale du Groupe CAPRIA créée en 2022, CAPRIA Security est une agence de sécurité privée intervient dans les domaines de la Sûreté / Sécurité et de la protection rapprochée sis à Antananarivo."
     images:
-      - "/images/security/police-dog.png"
+      - "/images/security/german-pinscher-01.png"
     button:
       enable: true
       label: Consulter
       link: /security
 
-  - title: "Capria Outsourcing"
-    content: "Expert en outsourcing, Capria répond à vos besoins sur vos projets d'externalisation en respectant votre budget. Nous vous proposons une équipe d'experts ayant au moins 5 ans d'expérience dans chaque domaine. Chacun excelle brillamment dans chaque métier et possède de solide référence au niveau international"
-    images:
-      - "/images/outsourcing/outsource.png"
-    button:
-      enable: true
-      label: Consulter
-      link: /outsourcing
-
   - title: "Capria Event"
     content: "CAPRIA EVENT s’occupe de la conception d’un événement de A à Z. Il est en charge des préparatifs, de l’organisation logistique et matérielle d’un événement pour un client, particulier ou professionnel, du mariage au séminaire en passant par la réception, l’inauguration, etc."
     images:
-      - "/images/event/opening-ceremony.png"
+      - "/images/event/capria-event.png"
     button:
       enable: true
       label: Consulter
       link: /event
 
-  - title: "Capria Agency"
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-    images: 
-      - "/images/agency/outsourcing.png"
+  - title: "Capria Outsourcing"
+    content: "Expert en outsourcing, Capria répond à vos besoins sur vos projets d'externalisation en respectant votre budget. Nous vous proposons une équipe d'experts ayant au moins 5 ans d'expérience dans chaque domaine. Chacun excelle brillamment dans chaque métier et possède de solide référence au niveau international"
+    images:
+      - "/images/outsourcing/building.png"
     button:
       enable: true
       label: Consulter
-      link: /agency
+      link: /outsourcing
 
 
 # workflow
