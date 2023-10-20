@@ -154,23 +154,32 @@ const { title, meta_title, description, image, noindex, canonical } =
   const header = document.getElementById("header");
   const navToggle = document.getElementById("nav-toggle");
 
-  var styles_header = {
-    "background": "white",
-    "transition": "1s"
-  };
-  var initial_styles_header = {
+  var without_background = {
     "background": "none",
-    "transition": "1s"
+    "transition": "1s",
+  };
+  var with_background = {
+    "background": "white",
+    "transition": "1s",
   }
 
   function scrollFunction() {
-    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && !navToggle.checked) {
-      Object.assign(header.style, styles_header);
+    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) || navToggle.checked) {
+      Object.assign(header.style, with_background);
     } else {
-      Object.assign(header.style, initial_styles_header);
+      Object.assign(header.style, without_background);
     }
   }
 
+  function addBackground() {
+    if (!navToggle.checked) {
+      Object.assign(header.style, without_background);
+    } else {
+      Object.assign(header.style, with_background);
+    }
+  }
+
+  navToggle.onchange = function() {addBackground()};
   window.onscroll = function() {scrollFunction()};
 
 </script>
