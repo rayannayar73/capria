@@ -150,34 +150,26 @@ const { title, meta_title, description, image, noindex, canonical } =
   </body>
 </html>
 <script>
-  var disappear_styles = {
-    "opacity": "0",
-    "transition": "1s"
-  };
-  var appear_styles = {
-    "opacity": "1",
-    "transition": "1s"
-  }
 
-  const logo_disappear = document.getElementById("logo-disappear");
+  const header = document.getElementById("header");
   const navToggle = document.getElementById("nav-toggle");
+
+  var styles_header = {
+    "background": "white",
+    "transition": "1s",
+  };
+  var initial_styles_header = {
+    "background": "none",
+    "transition": "1s",
+  }
 
   function scrollFunction() {
     if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && !navToggle.checked) {
-      Object.assign(logo_disappear.style, disappear_styles);
+      Object.assign(header.style, styles_header);
     } else {
-      Object.assign(logo_disappear.style, appear_styles);
+      Object.assign(header.style, initial_styles_header);
     }
   }
 
-  function addBackground() {
-    if (navToggle.checked) {
-      logo_disappear.style.opacity = "1";
-    } else {
-      logo_disappear.style.opacity = "0";
-    }
-  }
-
-  navToggle.onchange = function() {addBackground()};
   window.onscroll = function() {scrollFunction()};
 </script>

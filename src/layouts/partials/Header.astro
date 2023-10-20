@@ -20,16 +20,14 @@ export interface NavigationLink {
 }
 const { main }: { main: NavigationLink[] } = menu;
 ---
-  <header class="header"
-          style={`background-image: linear-gradient(45deg, rgba(244,244,244,1) 35%, rgba(14,0,0,0.4458158263305322) 80%, rgba(255,0,0,0.700717787114846) 95%), url(${image})`}>
-    <nav class="fixed navbar"  id="header">
-      <!-- logo -->
-      <!-- <div id="logo-disappear" class="order-0">
-        <Logo width="100px" height="100px"/>
-      </div> -->
-      <div id="logo-disappear" class="order-0">
-        <Logo width="50px" height="50px"/>
-      </div>
+  <header class="header "
+          style={`background-image: linear-gradient(45deg, rgba(244,244,244,1) 35%, rgba(14,0,0,0.4458158263305322) 80%, rgba(255,0,0,0.700717787114846) 95%), url(${image})`}
+          >
+    <!-- logo -->
+    <div id="logo-disappear" class="absolute order-0">
+      <Logo width="50px" height="50px"/>
+    </div>
+    <nav class="fixed top-0 w-full mx-auto md:justify-center navbar"  id="header">
       <!-- navbar toggler -->
       <input id="nav-toggle" type="checkbox" class="hidden" />
       <label
@@ -58,7 +56,7 @@ const { main }: { main: NavigationLink[] } = menu;
 
       <ul
         id="nav-menu"
-        class="order-3 hidden w-full navbar-nav md:order-1 md:flex md:w-auto md:space-x-3"
+        class="order-3 hidden navbar-nav md:order-1 md:flex md:w-auto md:space-x-3"
       >
         {
           main.map((menu) => (
@@ -71,7 +69,7 @@ const { main }: { main: NavigationLink[] } = menu;
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                   </span>
-                  <ul class="inset-0 top-0 nav-dropdown-list md:bg-white md:rounded md:shadow-lg md:block md:invisible md:opacity-0 group-hover:block md:group-hover:visible md:group-hover:opacity-100"
+                  <ul class="inset-0 top-0 md:absolute nav-dropdown-list md:bg-white md:rounded md:shadow-lg md:block md:invisible md:opacity-0 group-hover:block md:group-hover:visible md:group-hover:opacity-100"
                   >
                     {menu.children?.map((child) => (
                       <li class="nav-dropdown-item">
@@ -122,12 +120,12 @@ const { main }: { main: NavigationLink[] } = menu;
         )
       }
     </nav>
-    <div id="title-section" class="text-left header-content md:my-20 row">
-      <div class="ml-10 md:col-5 md:mt-0 sm:col-8 sm:mt-24">
+    <div id="title-section" class="w-full text-left header-content md:my-20 row">
+      <div class="md:col-5 md:mt-0 sm:col-8 sm:mt-24">
         <h1
-          class="font-bold leading-[44px] text-left">{title}<h1/>
-        <p class="mt-10">{description}</p>
-        <a class="btn btn-primary z-0 mt-5 py-[14px]" href={nav_button.link}>
+          class="ml-10 font-bold leading-[44px] text-left">{title}<h1/>
+        <p class="mt-10 ml-10">{description}</p>
+        <a class="ml-10 btn btn-primary z-0 mt-5 py-[14px]" href={nav_button.link}>
           {nav_button.label}
         </a>
       </div>
