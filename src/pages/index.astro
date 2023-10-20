@@ -15,7 +15,7 @@ const { services, workflow, call_to_action, title, description, image } = homepa
     <div class="text-center">
       <h1
         class="mx-auto max-w-[600px] font-bold leading-[44px]">{workflow?.title}<h1/>
-      <p class="mt-5">{workflow?.description}</p>
+      <p class="mx-auto max-w-[900px] mt-10">{workflow?.description}</p>
     </div>
   </section>
 
@@ -29,10 +29,10 @@ const { services, workflow, call_to_action, title, description, image } = homepa
             <div class="items-center gap-8 md:grid md:grid-cols-2">
               <div class={`service-carousel ${!isOdd && "md:order-2"}`}>
                 <Image
-                  class="mx-auto"
+                  class="mx-auto rounded-lg"
                   src={service!.images![0]}
-                  width={338}
-                  height={238}
+                  width={350}
+                  height={350}
                   alt=""
                 />
               </div>

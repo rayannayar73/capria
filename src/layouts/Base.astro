@@ -138,7 +138,7 @@ const { title, meta_title, description, image, noindex, canonical } =
   </head>
   <body>
     <TwSizeIndicator />
-    <Header 
+    <Header
       title={title}
       description={description}
       image={image}
@@ -150,67 +150,27 @@ const { title, meta_title, description, image, noindex, canonical } =
   </body>
 </html>
 <script>
-  var styles_header = {
-    "height": "4.375rem",
-    "transition": "1s",
-    "box-shadow": "0 0 0.5em rgba(0, 0, 0, 0.5)"
-  };
-  var initial_styles_header = {
-    "height": "100%",
-    "transition": "1s",
-    "box-shadow": "none"
-  }
-  var disappear_styles = {
-    "opacity": "0",
-    "transition": "1s"
-  };
-  var appear_styles = {
-    "opacity": "1",
-    "transition": "1s"
-  }
-  var pt_before = {
-    "padding-top":  "27.5%",
-    "transition": "1s"
-  };
-  var pt_after = {
-    "padding-top":  "42.5%",
-    "transition": "1s"
-  }
 
   const header = document.getElementById("header");
-  const nav_button_disappear = document.getElementById("nav-button-disappear");
-  const logo_disappear = document.getElementById("logo-disappear");
-  const title_section = document.getElementById("title-section");
-  const main_content = document.getElementById("main-content");
   const navToggle = document.getElementById("nav-toggle");
 
+  var styles_header = {
+    "background": "white",
+    "transition": "1s"
+  };
+  var initial_styles_header = {
+    "background": "none",
+    "transition": "1s"
+  }
+
   function scrollFunction() {
-    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && !navToggle.checked) {
+    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && !navToggle.checked) {
       Object.assign(header.style, styles_header);
-      Object.assign(nav_button_disappear.style, disappear_styles);
-      Object.assign(logo_disappear.style, disappear_styles);
-      Object.assign(title_section.style, disappear_styles);
-      Object.assign(main_content.style, pt_before);
     } else {
       Object.assign(header.style, initial_styles_header);
-      Object.assign(nav_button_disappear.style, appear_styles);
-      Object.assign(logo_disappear.style, appear_styles);
-      Object.assign(title_section.style, appear_styles);
-      Object.assign(main_content.style, pt_after);
-    }
-  }
-  
-  function addBackground() {
-    if (navToggle.checked) {
-      header.style.height = "100%";
-      logo_disappear.style.opacity = "1";
-    } else {
-      header.style.height = "4.375rem";
-      logo_disappear.style.opacity = "0";
-      title_section.style.opacity = "0";
     }
   }
 
-  navToggle.onchange = function() {addBackground()};
   window.onscroll = function() {scrollFunction()};
+
 </script>

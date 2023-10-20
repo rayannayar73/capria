@@ -5,7 +5,7 @@ image: "/images/capria2.jpg"
 
 # feature
 services:
-- title: Capria Event
+- title: Capria Trans
   subtitle: Best For Small Individuals
   features:
     - Express Service
@@ -13,7 +13,7 @@ services:
     - Time-Critical Services
   button:
     label: Commencer
-    link: "/event"
+    link: "/transport"
 
 - title: Capria Security
   subtitle: Best For Large Individuals
