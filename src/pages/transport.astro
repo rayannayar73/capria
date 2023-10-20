@@ -4,7 +4,7 @@ import Cta from "@layouts/components/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 import Default from "@layouts/Default.astro";
 
-const entry = await getEntryBySlug("event", "index");
+const entry = await getEntryBySlug("transport", "index");
 const { title, meta_title, description, image } = entry.data;
 
 const cta = await getEntryBySlug("homepage", "index");
@@ -19,5 +19,5 @@ const { call_to_action } = cta.data;
 >
   <Default data={entry} />
   <Cta cta={call_to_action} />
-  
+
 </Base>

@@ -26,7 +26,7 @@ feature:
     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
 
 teams:
-  - name: Capria Event
+  - name: Capria Trans
     description: Pour l'organisation de vos évènements
     image: /images/capria4.jpg
   - name: Capria Security

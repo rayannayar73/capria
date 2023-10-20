@@ -9,8 +9,8 @@
       "hasChildren": true,
       "children": [
         {
-          "name": "Event",
-          "url": "/event"
+          "name": "Transport",
+          "url": "/transport"
         },
         {
           "name": "Outsourcing",
@@ -54,8 +54,8 @@
       "name": "Services",
       "menu": [
         {
-          "text": "Event",
-          "url": "/event"
+          "text": "Transport",
+          "url": "/transport"
         },
         {
           "text": "Outsourcing",

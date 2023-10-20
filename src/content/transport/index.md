@@ -1,5 +1,5 @@
 ---
-title: Capria Event
+title: Capria Trans
 secondtitle: Le meilleur organisateur d'évènement à Madagascar
 description: "Nous nous occupons de la conception et l'organisation de vos événement, de location de voiture et aussi de préstation d'animateur, animatrice."
 image: "/images/IMG_1741.JPG"

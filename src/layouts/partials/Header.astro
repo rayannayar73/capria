@@ -20,19 +20,22 @@ export interface NavigationLink {
 }
 const { main }: { main: NavigationLink[] } = menu;
 ---
-  <header class="header position: fixed w-full" 
-          style={`background-image: linear-gradient(72deg, rgba(244,244,244,1) 4%, rgba(14,0,0,0.4458158263305322) 85%, rgba(255,0,0,0.700717787114846) 100%), url(${image})`} id="header">
-    <nav class="navbar container">
+  <header class="header"
+          style={`background-image: linear-gradient(45deg, rgba(244,244,244,1) 35%, rgba(14,0,0,0.4458158263305322) 80%, rgba(255,0,0,0.700717787114846) 95%), url(${image})`} id="header">
+    <nav class="container fixed navbar">
       <!-- logo -->
-      <div id="logo-disappear" class="order-0">
+      <!-- <div id="logo-disappear" class="order-0">
         <Logo width="100px" height="100px"/>
+      </div> -->
+      <div id="logo-disappear" class="order-0">
+        <Logo width="50px" height="50px"/>
       </div>
       <!-- navbar toggler -->
       <input id="nav-toggle" type="checkbox" class="hidden" />
       <label
         id="show-button"
         for="nav-toggle"
-        class="order-2 flex cursor-pointer items-center md:order-1 md:hidden"
+        class="flex items-center order-2 cursor-pointer md:order-1 md:hidden"
       >
         <svg class="h-6 fill-current" viewBox="0 0 20 20">
           <title>Menu Open</title>
@@ -42,7 +45,7 @@ const { main }: { main: NavigationLink[] } = menu;
       <label
         id="hide-button"
         for="nav-toggle"
-        class="order-2 cursor-pointer items-center md:order-1"
+        class="items-center order-2 cursor-pointer md:order-1"
       >
         <svg class="h-6 fill-current" viewBox="0 0 20 20">
           <title>Menu Close</title>
@@ -55,23 +58,20 @@ const { main }: { main: NavigationLink[] } = menu;
 
       <ul
         id="nav-menu"
-        class="navbar-nav order-3 hidden w-full md:order-1 md:flex md:w-auto md:space-x-3"
+        class="order-3 hidden w-full navbar-nav md:order-1 md:flex md:w-auto md:space-x-3"
       >
         {
           main.map((menu) => (
             <>
               {menu.hasChildren ? (
-                <li class="nav-item nav-dropdown group relative mx-5">
-                  <span class="nav-link inline-flex items-center">
+                <li class="relative mx-5 nav-item nav-dropdown group">
+                  <span class="inline-flex items-center nav-link">
                     {menu.name}
-                    <svg class="h-4 w-4 fill-current" viewBox="0 0 20 20">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
                       <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
                     </svg>
                   </span>
-                  <ul class="nav-dropdown-list 
-                    md:bg-white md:rounded md:shadow-lg inset-0 top-0
-                    md:block md:invisible md:opacity-0 
-                    group-hover:block md:group-hover:visible md:group-hover:opacity-100"
+                  <ul class="inset-0 top-0 nav-dropdown-list md:bg-white md:rounded md:shadow-lg md:block md:invisible md:opacity-0 group-hover:block md:group-hover:visible md:group-hover:opacity-100"
                   >
                     {menu.children?.map((child) => (
                       <li class="nav-dropdown-item">
@@ -88,7 +88,7 @@ const { main }: { main: NavigationLink[] } = menu;
                   </ul>
                 </li>
               ) : (
-                <li class="nav-item mx-5">
+                <li class="mx-5 nav-item">
                   <a
                     href={menu.url}
                     class={`nav-link block ${
@@ -122,11 +122,11 @@ const { main }: { main: NavigationLink[] } = menu;
         )
       }
     </nav>
-    <div id="title-section" class="row mt-16 text-left">
-      <div class="md:col-5 md:mt-0 offset-1 sm:col-8 sm:mt-24">
+    <div id="title-section" class="text-left header-content md:my-20 row">
+      <div class="ml-10 md:col-5 md:mt-0 sm:col-8 sm:mt-24">
         <h1
           class="font-bold leading-[44px] text-left">{title}<h1/>
-        <p class="mt-5">{description}</p>
+        <p class="mt-10">{description}</p>
         <a class="btn btn-primary z-0 mt-5 py-[14px]" href={nav_button.link}>
           {nav_button.label}
         </a>

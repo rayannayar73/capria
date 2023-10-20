@@ -138,7 +138,7 @@ const { title, meta_title, description, image, noindex, canonical } =
   </head>
   <body>
     <TwSizeIndicator />
-    <Header 
+    <Header
       title={title}
       description={description}
       image={image}
@@ -149,7 +149,7 @@ const { title, meta_title, description, image, noindex, canonical } =
     <Footer />
   </body>
 </html>
-<script>
+<!-- <script>
   var styles_header = {
     "height": "4.375rem",
     "transition": "1s",
@@ -185,7 +185,7 @@ const { title, meta_title, description, image, noindex, canonical } =
   const navToggle = document.getElementById("nav-toggle");
 
   function scrollFunction() {
-    if ((document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) && !navToggle.checked) {
+    if ((document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) && !navToggle.checked) {
       Object.assign(header.style, styles_header);
       Object.assign(nav_button_disappear.style, disappear_styles);
       Object.assign(logo_disappear.style, disappear_styles);
@@ -199,7 +199,7 @@ const { title, meta_title, description, image, noindex, canonical } =
       Object.assign(main_content.style, pt_after);
     }
   }
-  
+
   function addBackground() {
     if (navToggle.checked) {
       header.style.height = "100%";
@@ -213,4 +213,4 @@ const { title, meta_title, description, image, noindex, canonical } =
 
   navToggle.onchange = function() {addBackground()};
   window.onscroll = function() {scrollFunction()};
-</script>
+</script> -->
