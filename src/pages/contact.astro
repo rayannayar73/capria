@@ -12,13 +12,13 @@ const { title, description, info, image } = entry?.data;
 <Base title={title} description={description} image={image}>
   <section class="section">
     <div class="container">
-      <h1 class="text-center font-normal" set:html={markdownify(title)} />
-      <div class="section row pb-0">
+      <h1 class="font-normal text-center" set:html={markdownify(title)} />
+      <div class="pb-0 section row">
         <div class="col-12 md:col-6 lg:col-7">
-          <form class="contact-form" method="POST" action={contact_form_action}>
+          <form class="contact-form" method="POST" action={contact_form_action} data-netlify="true">
             <div class="mb-3">
               <input
-                class="form-input w-full rounded"
+                class="w-full rounded form-input"
                 name="name"
                 type="text"
                 placeholder="Nom"
@@ -27,7 +27,7 @@ const { title, description, info, image } = entry?.data;
             </div>
             <div class="mb-3">
               <input
-                class="form-input w-full rounded"
+                class="w-full rounded form-input"
                 name="email"
                 type="email"
                 placeholder="Votre email"
@@ -36,7 +36,7 @@ const { title, description, info, image } = entry?.data;
             </div>
             <div class="mb-3">
               <input
-                class="form-input w-full rounded"
+                class="w-full rounded form-input"
                 name="subject"
                 type="text"
                 placeholder="Objet"
@@ -45,8 +45,9 @@ const { title, description, info, image } = entry?.data;
             </div>
             <div class="mb-3">
               <textarea
-                class="form-textarea w-full rounded-md"
+                class="w-full rounded-md form-textarea"
                 rows="7"
+                name="message"
                 placeholder="Votre message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary"> Envoyer </button>
@@ -55,7 +56,7 @@ const { title, description, info, image } = entry?.data;
         <div class="content col-12 md:col-6 lg:col-5">
           <h4 set:html={markdownify(info?.title)} />
           <p class="mt-4" set:html={markdownify(info?.description)} />
-          <ul class="contact-list mt-5 list-none pl-0">
+          <ul class="pl-0 mt-5 list-none contact-list">
             {
               info?.contacts?.map((contact: string) => (
                 <li>
