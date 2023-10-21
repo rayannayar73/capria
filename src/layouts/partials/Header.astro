@@ -20,7 +20,7 @@ export interface NavigationLink {
 }
 const { main }: { main: NavigationLink[] } = menu;
 ---
-  <header class="header "
+  <header class="relative z-30 header"
           style={`background-image: linear-gradient(45deg, rgba(244,244,244,1) 35%, rgba(14,0,0,0.4458158263305322) 80%, rgba(255,0,0,0.700717787114846) 95%), url(${image})`}
           >
     <!-- logo -->
@@ -125,7 +125,7 @@ const { main }: { main: NavigationLink[] } = menu;
         <h1
           class="ml-10 font-bold leading-[44px] text-left">{title}<h1/>
         <p class="mt-10 ml-10">{description}</p>
-        <a class="ml-10 btn btn-primary z-0 mt-5 py-[14px]" href={nav_button.link}>
+        <a class="ml-10 btn btn-primary z-[-1] mt-5 py-[14px]" href={nav_button.link}>
           {nav_button.label}
         </a>
       </div>
