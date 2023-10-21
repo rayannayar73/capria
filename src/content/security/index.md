@@ -2,7 +2,7 @@
 title: Capria Security
 secondtitle: La meilleure équipe de sécurité
 description: "CAPRIA SECURITY veille à la sécurité des biens et des personnes sur un périmètre déterminé. Les responsables sont présents 24h/24 pour un conseil et nous sommes entièrement à l’écoute des clients."
-image: "/images/capria5.jpg"
+image: "/images/security-1.jpeg"
 
 # feature
 services:
