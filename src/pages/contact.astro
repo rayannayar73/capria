@@ -1,7 +1,5 @@
 ---
 import config from "@config/config.json";
-import Base from "@layouts/Base.astro";
-import { markdownify } from "@lib/utils/textConverter";
 import { getEntryBySlug } from "astro:content";
 
 const entry = await getEntryBySlug("contact", "index");
@@ -15,7 +13,7 @@ const { title, description, info, image } = entry?.data;
       <h1 class="font-normal text-center" set:html={markdownify(title)} />
       <div class="pb-0 section row">
         <div class="col-12 md:col-6 lg:col-7">
-          <form class="contact-form" method="POST" action={contact_form_action} data-netlify="true">
+          <form class="contact-form" method="POST" netlify>
             <div class="mb-3">
               <input
                 class="w-full rounded form-input"
