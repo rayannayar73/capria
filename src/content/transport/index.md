@@ -6,33 +6,32 @@ image: "/images/IMG_1741.JPG"
 
 # feature
 services:
-- title: ORGANISATION D’EVENEMENT
-  subtitle: Pour un client, particulier ou professionnel
+- title: SUV
+  subtitle: Voiture Eco et SUV
   features:
-    - Mariage
-    - Séminaire
-    - Evénement Sportif ou Culturel
+    - 4x4
+    - Confort
+    - Economique
   button:
     label: Commencer
     link: "/contact"
 
-- title: LOCATION DE VOITURE
-  subtitle: Pour vos vacances, aller à un événement, rencontre d’affaires
+- title: MINIBUS
+  subtitle: Voiture familliale
   features:
-    - Chauffeur professionnel
-    - En ville ou péripherique
-    - Voitures propres et confortables 
-    - Tarifs variables
+    - Confort
+    - Spacieux
+    - Voyage en groupe 
   button:
     label: Commencer
     link: "/contact"
 
-- title: ANIMATEUR, ANIMATRICE
-  subtitle: Organiser et de conduire des projets d’animation
+- title: VIP
+  subtitle: Voiture de luxe
   features:
-    - Animation des activités
-    - Jeux et présentations
-    - Tous types d’événements
+    - Offre Premium
+    - Business meeting
+    - Luxe et Confort
   button:
     label: Commencer
     link: "/contact"
