@@ -59,7 +59,7 @@ Votre voyage commence ici, avec notre service de location de voitures de premier
   Vous souhaitez **louer une voiture** pour vos vacances, vos sorties touristiques, aller à un mariage ou une rencontre d’affaires, faire de la publicité ou pour tout autre déplacement ?
   Nous avons l’offre qu’il vous faut quel que soit le type et modèle de voiture que vous voulez !
   </div>
-  <div class="col-7 offset-5">
+  <div class="col-9">
   
   #### Nos engagements
   
