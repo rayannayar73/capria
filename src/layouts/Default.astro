@@ -1,5 +1,6 @@
 ---
 import { markdownify } from "@lib/utils/textConverter";
+import { Image } from "@astrojs/image/components";
 
 const { data } = Astro.props;
 const { title, secondtitle, services } = data.data;
@@ -8,32 +9,43 @@ const { Content } = await data.render();
 
   <section class="section " >
     <div class="container">
-      <div class="row justify-center">
-        <div class="col-12 md:col-10">
-          <article class="text-center">
-            <h2 set:html={markdownify(secondtitle)} class="text-left my-6" />
-            <div class="content text-left">
-              <Content />
-            </div>
-          </article>
-        </div>
-      </div>
+      <h2 set:html={markdownify(secondtitle)} class="my-6 text-left" />
+      <article class="text-center">
+          <Content />
+      </article>
     </div>
   </section>
 
   <!-- Services -->
   <section class="section">
     <div class="container">
-      <h3 class="text-center my-6">Nos Services</h3>
-      <p class="text-center mb-10">Le département {title} dispose de plusieurs services pour offrir un large choix à ses clients.</p>
-      <div class="row justify-center ">
+      <h3 class="my-6 text-center">Nos Services</h3>
+      <p class="mb-10 text-center">Le département {title} dispose de plusieurs services pour offrir un large choix à ses clients.</p>
+      <div class="justify-center row ">
         {
           services?.map((service) => (
             <div
               class={`col-12 md:col-4 hover:col-recommended group`}
             >
-              <div class="card text-center border-none">
-                <h4>{service.title}</h4>
+              <div class="text-center border-none card">
+                <div class="relative group">
+
+                  {
+                    service.image && (
+                      <Image
+                      src={service.image}
+                      height={500}
+                      width={500}
+                      alt={title}
+                      class="w-full h-auto rounded-lg"
+                      />
+                      )
+                    }
+                    <div class="absolute inset-0 flex items-center justify-center transition duration-300 opacity-0 group-hover:opacity-100">
+                      <div class="absolute top-0 left-0 w-full h-full bg-black rounded-lg opacity-50"></div>
+                      <h4 class="absolute p-2 text-white">{service.title}</h4>
+                  </div>
+                </div>
                 <h5 class="mt-5 font-normal text-text">{service.subtitle}</h5>
                 <ul class="mt-5">
                   {service?.features?.map((feature, index) => (
