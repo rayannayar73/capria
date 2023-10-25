@@ -49,7 +49,7 @@ Dans l'ère numérique en constante évolution, les entreprises à la recherche 
   
   ### Pourquoi choisir notre entreprise ?
 
-  <div class="md:col-4 col-12">
+  <div class="mx-auto md:col-5 col-12">
 
   #### Expertise Technique :
   Notre équipe est composée de professionnels hautement qualifiés et formés dans les dernières technologies et tendances du secteur.
@@ -57,17 +57,14 @@ Dans l'ère numérique en constante évolution, les entreprises à la recherche 
   #### Qualité Exceptionnelle : 
   La qualité est notre priorité absolue, et nous nous engageons à fournir des solutions technologiques qui répondent aux normes internationales
 
-  </div>
-  <div class="md:col-4 col-12">
-    
   #### Communication Facile :
   Notre équipe est parfaitement bilingue, capable de communiquer efficacement en français et en anglais, éliminant les barrières linguistiques.
 
+  </div>
+  <div class="mx-auto md:col-5 col-12">
+
   #### Délais Rapides  : 
   Nous sommes reconnus pour notre efficacité et notre respect des délais, garantissant que vos projets sont achevés en temps voulu.
-
-   </div>
-   <div class="md:col-4 col-12">
 
   #### Coût Compétitif : 
   Madagascar offre des avantages financiers significatifs par rapport à de nombreuses autres destinations, ce qui vous permet de bénéficier de services de haute qualité à un coût compétitif.
