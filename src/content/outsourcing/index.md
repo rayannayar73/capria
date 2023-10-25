@@ -59,8 +59,6 @@ Dans le marché mondial concurrentiel d'aujourd'hui, les entreprises cherchent c
 
 <div class="grid text-left mt-11 content">
 
- 
-
   <div class="container col-12 row">
   
   ### Pourquoi externaliser à Madagascar ?
