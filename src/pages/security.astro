@@ -5,10 +5,10 @@ import { getEntryBySlug } from "astro:content";
 import Default from "@layouts/Default.astro";
 
 const entry = await getEntryBySlug("security", "index");
-const { title, meta_title, description, image } = entry.data;
+const { title, meta_title, description, image, call_to_action } = entry.data;
 
-const cta = await getEntryBySlug("homepage", "index");
-const { call_to_action } = cta.data;
+// const cta = await getEntryBySlug("homepage", "index");
+// const { call_to_action } = cta.data;
 ---
 
 <Base
@@ -18,6 +18,7 @@ const { call_to_action } = cta.data;
   image={image}
 >
   <Default data={entry} />
-  <Cta cta={call_to_action} />
-  
+
+  <Cta cta={call_to_action} image={call_to_action.image} />
+
 </Base>
