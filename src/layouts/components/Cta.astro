@@ -2,23 +2,29 @@
 import { Image } from "@astrojs/image/components";
 import { markdownify } from "@lib/utils/textConverter";
 
-const {cta} = Astro.props
+const {cta, image} = Astro.props
 ---
 
 <section class="section">
-    <div class="section container rounded-xl shadow">
-      <div class="row  mx-auto items-center justify-center">
+    <div class="container shadow section rounded-xl">
+      <div class="items-center justify-center mx-auto row">
         <div class="md:col-5 lg:col-4 sm:col-12">
-          <lottie-player src="/lottie/107650-creative-idea.json"  
-          background="transparent"  speed="1"  style="width: 325px; height: 206px; margin: 0 auto"  
-          loop autoplay></lottie-player>
+          {
+            image? (
+              <Image src={image} height={300} width={300} alt={cta.title} class="w-full h-auto rounded-lg"/>)
+            :(
+              <lottie-player src="/lottie/107650-creative-idea.json"
+              background="transparent"  speed="1"  style="width: 325px; height: 206px; margin: 0 auto"
+              loop autoplay></lottie-player>
+            )
+          }
         </div>
-        <div class="mt-5 text-center md:mt-0 md:text-left md:col-6 lg:col-5">
+        <div class="mt-5 text-center md:mt-0 md:col-6 lg:col-5">
           <h2>{cta?.title}</h2>
           <p class="mt-6" set:html={markdownify(cta?.content)}></p>
           {cta.button.enable && (
             <a
-              class="btn btn-primary mt-4"
+              class="mt-4 btn btn-primary"
               href={cta.button.link}
               rel={cta.button.rel}
             >
@@ -29,4 +35,3 @@ const {cta} = Astro.props
       </div>
     </div>
   </section>
-  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

@@ -40,29 +40,52 @@ services:
     link: "/contact"
 
 ---
-<div class="text-left">
+<div class="container text-left">
 Votre voyage commence ici, avec notre service de location de voitures de premier ordre. Que vous planifiiez un voyage d'affaires, des vacances en famille, une escapade de week-end ou même si vous avez simplement besoin d'un véhicule de remplacement, nous sommes là pour répondre à tous vos besoins de location.
 </div>
 
 
-<div class="grid text-left content">
-  <div class="col-9">
+<div class="grid text-left mt-11 content">
 
-  #### Que faisons nous ?
-
-  Nous nous occupons de la conception et **l'organisation de vos événement** de A à Z. Nous prenons en charge :
-  - les préparatifs
-  - l’organisation logistique et matérielle
-
-  Pour un client, particulier ou professionnel, du mariage au séminaire en passant par la réception, l’inauguration, etc.
-
-  Vous souhaitez **louer une voiture** pour vos vacances, vos sorties touristiques, aller à un mariage ou une rencontre d’affaires, faire de la publicité ou pour tout autre déplacement ?
-  Nous avons l’offre qu’il vous faut quel que soit le type et modèle de voiture que vous voulez !
+ <div class="text-center">
+ 
+  #### Pourquoi nous choisir 
   </div>
-  <div class="col-9">
   
+  <div class="col-12 row">
+
+  <div class="md:col-5 col-12">
+    <video width="80%" autoplay loop muted class="top-0 mx-auto rounded-lg">
+      <source src="/images/event/banner-2.mp4" type="video/mp4">
+    </video> 
+  </div>
+  <div class="md:col-7 col-12 row">
+   <div class="mt-5 md:col-6 col-12">
+    
+  ##### Large flotte de véhicules :
+  Nous proposons une vaste sélection de véhicules, des luxueux, des SUV aux 4x4. et autres.  Quel que soit votre besoin, nous avons le véhicule parfait pour vous.
+
+  ##### Tarifs compétitifs : 
+
+  Nous croyons en l'accessibilité et offrons des tarifs concurrentiels pour vous permettre de profiter au maximum de votre voyage.
+
+   </div>
+   <div class="mt-5 md:col-6 col-12">
+
+  ##### Service client dévoué : 
+  Notre équipe amicale et compétente est là pour répondre à toutes vos questions et s'assurer que votre expérience de location de voiture soit sans tracas.
+
+  ##### Flexibilité de location : 
+  Que vous ayez besoin d'une location de courte durée ou d'un contrat de location à long terme, nous nous adaptons à vos besoins.
+
+
+  </div>
+  </div>
+  </div>
+
+  <div class="mx-auto mt-10 text-left col-10">
+
   #### Nos engagements
-  
-  Nous vous offrons la possibilité de développer, d’organiser et de conduire **des projets d’animation** visant à l’épanouissement, la socialisation et l’autonomie des personnes en prenant en compte leur environnement.
+  Lorsque vous choisissez CAPRIA TRANS, vous choisissez la qualité, la fiabilité et le service exceptionnel. Nous sommes fiers de vous accompagner dans chacun de vos voyages, que ce soit à travers la ville ou à travers le pays.
   </div>
 </div>
