@@ -32,7 +32,7 @@
     },
     {
       "name": "Contact",
-      "url": "/contact"
+      "url": "/contact#contact"
     }
 
   ],
@@ -46,7 +46,7 @@
         },
         {
           "text": "Quick Start",
-          "url": "/contact"
+          "url": "/contact#contact"
         }
       ]
     },

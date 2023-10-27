@@ -21,7 +21,7 @@
   "nav_button": {
     "enable": true,
     "label": "Commencer",
-    "link": "/contact"
+    "link": "/contact#contact"
   },
 
   "params": {

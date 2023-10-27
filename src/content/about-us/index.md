@@ -1,29 +1,29 @@
 ---
-title: "A propos de nous"
+title: "Groupe Capria"
 image: "/images/capria-admin.jpg"
-description : "Nous allons vous présenter les équipes qui constituent le Groupe Capria"
+description : "Nous sommes votre guichet unique pour la sécurité, l'externalisation, la location de voiture et la programmation, vous offrant des solutions complètes et de qualité, le tout avec une disponibilité 24h/24."
 # feature
 feature: 
   title: Nos Valeurs
   valeurs:
-  - name: "Clean Code"
-    icon: "/images/code.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Object Oriented"
-    icon: "/images/oop.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+  - name: "Sécurité avant tout"
+    icon: "/images/checkmark-circle.svg"
+    content: "La sécurité de nos clients et de leurs biens est notre priorité absolue."
+  - name: "Partenariat durable"
+    icon: "/images/cloud.svg"
+    content: "Votre partenaire de confiance dans l'externalisation de vos activités"
   - name: "24h Service"
     icon: "/images/user-clock.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Value for Money"
-    icon: "/images/love.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Faster Response"
+    content: "Accès à l'assistance et au soutien à tout moment, jour et nuit"
+  - name: "Service client exceptionnel"
     icon: "/images/speedometer.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
-  - name: "Cloud Support"
-    icon: "/images/cloud.svg"
-    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit quam nihil"
+    content: "Nous nous assurons que nos clients se sentent valorisés et satisfaits"
+  - name: "Excellence technologique"
+    icon: "/images/code.svg"
+    content: "Atteindre l'excellence dans le développement logiciel, en utilisant les dernières technologies et meilleures pratiques."
+  - name: "Innovation continue"
+    icon: "/images/oop.svg"
+    content: " Nous recherchons en permanence de nouvelles approches et idées pour offrir des solutions informatiques de pointe."
 
 teams:
   - name: Capria Trans
@@ -40,18 +40,33 @@ teams:
     image: /images/capria6.jpg
 
 ---
+<div class="container text-center">
 
+Notre entreprise est spécialisée dans ces quatre domaines d'activité, et vous propose des solutions sur mesure, adaptées à votre budget et à vos objectifs. Que vous soyez un particulier ou un professionnel, nous vous accompagnons dans la réalisation de vos projets, en vous offrant un service de qualité, rapide et efficace.
+</div>
+<div class="grid text-left mt-11 content">
+  <div class="col-12 row">
+  <div class="mx-auto md:col-5 col-11">
 
-## Qui sommes nous ?
-Capria Agency réalise tous vos travaux de retranscription on audio, la synthèse de vos réunions, la retranscription intégrale de  interviews...
+### Sécurité : 
 
-Capria Agency peut jouer le rôle d’un centre de rela on client qui est le point de contact avec votre client, doté de conseillers bien formés et sans accent
+Nous vous protégeons contre les risques liés à la cybercriminalité, aux harcèlements ou aux cambriolages. Nous installons et maintenons des systèmes de sécurité performants, tels que des alarmes, des caméras. Nous proposons une **application SOS** pour vous permettre d'avertir les forces de l'ordre en cas d'attaques. Nous vous formons également aux bonnes pratiques de sécurité, et nous intervenons en cas d'urgence 24h/24 et 7j/7.
 
-#### BUSINESS PROCESS OUTSOURCING
+### Externalisation :
 
-Capria Agency s’occupe de toutes vos prises de rendez-vous, de la ges on de votre agenda, de la réserva on de votre vol ou de votre hôtel, de la rédac on de vos courriers
+ Nous vous aidons à optimiser votre organisation et à réduire vos coûts, en prenant en charge certaines tâches ou fonctions de votre entreprise. Nous vous proposons des services d'externalisation dans les domaines suivants : comptabilité, gestion des ressources humaines, marketing, relation client, logistique et maintenance. Nous vous garantissons un **travail de qualité**, réalisé par des professionnels qualifiés et **expérimentés**.
 
-> Nous avons une jeune équipe dynamique et expérimentée. Nous vous offrons une solu on sur mesure adaptée à vos besoins et  à votre budget. Notre presta on de qualité et dans le respect des deadlines vous assure un résultat plus
-que satisfaisant.
+  </div>
+  <div class="mx-auto md:col-5 col-11">
+    
+### Location de voiture : 
 
-Nous vous proposons une équipe d’experts ayant au moins 5 ans d’expérience dans chaque domaine. Chacun excelle brillamment dans  mé er et possède de solide référence au niveau international
+  Nous vous offrons la possibilité de louer une voiture pour une courte ou une longue durée, selon vos besoins. Nous disposons d'un large choix de véhicules, allant des SUV, en passant par le minibus ou les **voitures de luxes**. Nous vous offrons des tarifs avantageux, incluant l'assurance, le kilométrage illimité et l'assistance routière. Vous pouvez réserver votre voiture en ligne ou par téléphone, et la récupérer dans l'une de nos agences.
+
+### Programmation : 
+
+  Nous vous accompagnons dans la création ou l'amélioration de votre site web, de votre application mobile ou de votre logiciel. Nous maîtrisons les langages et les technologies les plus récents, tels que HTML5, CSS3, **JavaScript**, **PHP**, **Java** ou **C#**. Nous vous conseillons sur le design, l'ergonomie, le référencement et la sécurité de votre projet. Nous vous livrons un produit clé en main, testé et conforme à vos attentes.
+
+  </div>
+  </div>
+</div>

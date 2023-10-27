@@ -1,5 +1,6 @@
 ---
 title: "Contactez Nous"
+description: "N'attendez plus, contactez-nous dès aujourd'hui pour bénéficier d'un devis gratuit et personnalisé ! Nous sommes à votre écoute et à votre service !"
 image: "/images/capria-admin.jpg"
 info: 
   title: Pourquoi devriez vous nous contacter!
