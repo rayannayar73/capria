@@ -1,8 +1,8 @@
 ---
 import Base from "@layouts/Base.astro";
-import Cta from "@layouts/components/Cta.astro";
 import { getEntryBySlug } from "astro:content";
 import Default from "@layouts/Default.astro";
+import CtaSosApp from "@layouts/components/CtaSosApp.astro";
 
 const entry = await getEntryBySlug("security", "index");
 const { title, meta_title, description, image, call_to_action } = entry.data;
@@ -19,6 +19,6 @@ const { title, meta_title, description, image, call_to_action } = entry.data;
 >
   <Default data={entry} />
 
-  <Cta cta={call_to_action} image={call_to_action.image} />
+  <CtaSosApp cta={call_to_action} />
 
 </Base>

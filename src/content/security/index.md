@@ -42,8 +42,10 @@ services:
 # call_to_action
 call_to_action:
   title: Capria Find Me
-  content:  Notre application de géolocalisation mobile avec service de sécurité est conçue pour vous offrir une tranquillité d'esprit totale. Vous appuyez et nous intervenons immédiatement
-  image: '/images/logo.png'
+  add: Nouveau Produit !!
+  content: "D'un simple toucher sur l'écran, vous pouvez déclencher un appel SOS pour alerter nos équipes de sécurité."
+  description:  Notre application de géolocalisation mobile avec service de sécurité est conçue pour vous offrir une tranquillité d'esprit totale. Vous appuyez et nous intervenons immédiatement. Plus besoin de composer des numéros d'urgence, nous sommes à portée de main.
+  image: '/images/security/capriia-find-me.jpeg'
   button:
     enable: true
     label: "Commander"

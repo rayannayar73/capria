@@ -1,0 +1,32 @@
+---
+import { markdownify } from "@lib/utils/textConverter";
+
+const {cta} = Astro.props
+---
+
+<section class="section">
+  <h3 class="my-6 text-center">{cta.add}</h3>
+      <p class="container mb-10 text-center">{cta.description}</p>
+      <div class="container border-2 rounded-full shadow-xl section">
+      <div class="items-center justify-center mx-auto row">
+        <div class="md:col-5 lg:col-4 sm:col-12">
+          <lottie-player src="/lottie/location.json"
+          background="transparent"  speed="1"  style="width: 325px; height: 206px; margin: 0 auto"
+          loop autoplay></lottie-player>
+        </div>
+        <div class="mt-5 text-center md:mt-0 md:col-6 lg:col-5">
+          <h3>{cta?.title}</h3>
+          <p class="mt-6" set:html={markdownify(cta?.content)}></p>
+          {cta.button.enable && (
+            <a
+              class="mt-4 btn btn-primary"
+              href={cta.button.link}
+              rel={cta.button.rel}
+            >
+              {cta.button.label}
+            </a>
+          )}
+        </div>
+      </div>
+    </div>
+  </section>
