@@ -1,6 +1,6 @@
 ---
 title: "Groupe Capria"
-description: "Vous cherchez une entreprise qui peut répondre à tous vos besoins en matière de sécurité, d'externalisation, de location de voiture et de programmation ? Ne cherchez plus, vous avez trouvé la PME qu'il vous faut !"
+description: "Vous cherchez une entreprise qui peut répondre à tous vos besoins en matière de sécurité, d'externalisation, de location de voiture et de programmation ? Ne cherchez plus, vous avez trouvé ce qu'il vous faut !"
 image: "/images/banner-4.jpeg"
 banner:
   title: Votre partenaire fiable et économique pour vos travaux d’externalisation
@@ -55,7 +55,7 @@ services:
 workflow: 
   title: "Le meilleur groupe d'entreprise."
   image: "/images/banner.jpg"
-  description: "Notre PME est spécialisée dans ces quatre domaines d'activité, et vous propose des solutions sur mesure, adaptées à votre budget et à vos objectifs. Que vous soyez un particulier ou un professionnel, nous vous accompagnons dans la réalisation de vos projets, en vous offrant un service de qualité, rapide et efficace"
+  description: "Notre entreprise est spécialisée dans ces quatre domaines d'activité, et vous propose des solutions sur mesure, adaptées à votre budget et à vos objectifs. Que vous soyez un particulier ou un professionnel, nous vous accompagnons dans la réalisation de vos projets, en vous offrant un service de qualité, rapide et efficace"
 
 # call_to_action
 call_to_action:

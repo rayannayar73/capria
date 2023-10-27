@@ -1,7 +1,7 @@
 ---
 title: Capria Trans
 secondtitle: Bienvenue chez Capria Trans !
-description: "Nous nous occupons de la conception et l'organisation de vos événement, de location de voiture et aussi de préstation d'animateur, animatrice."
+description: "Nous nous occupons de location de voiture offrant une gamme variée de SUV, 4x4 et voitures de luxe pour satisfaire tous les besoins de déplacement."
 image: "/images/IMG_1741.JPG"
 
 # feature
@@ -63,7 +63,7 @@ Votre voyage commence ici, avec notre service de location de voitures de premier
    <div class="mt-5 md:col-6 col-12">
     
   ##### Large flotte de véhicules :
-  Nous proposons une vaste sélection de véhicules, des luxueux, des SUV aux 4x4. et autres.  Quel que soit votre besoin, nous avons le véhicule parfait pour vous.
+  Nous proposons une vaste sélection de véhicules, des voitures de luxe, des SUV aux 4x4. Quel que soit votre besoin, nous avons le véhicule parfait pour vous.
 
   ##### Tarifs compétitifs : 
 
