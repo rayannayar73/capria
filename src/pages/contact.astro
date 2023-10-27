@@ -10,12 +10,12 @@ const { title, description, info, image } = entry?.data;
 ---
 
 <Base title={title} description={description} image={image}>
-  <section class="section">
+  <section class="section" id="contact">
     <div class="container">
       <h1 class="font-normal text-center" set:html={markdownify(title)} />
       <div class="pb-0 section row">
         <div class="col-12 md:col-6 lg:col-7">
-          <form class="contact-form" method="POST" netlify>
+          <form class="contact-form" method="POST" action={contact_form_action}>
             <div class="mb-3">
               <input
                 class="w-full rounded form-input"

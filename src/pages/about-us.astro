@@ -13,17 +13,11 @@ const { feature, teams, title, description, image } = entry.data;
 
 <Base title={title} description={description} image={image}>
 
-  <section class="section">
-    <div class="container">
-      <div class="flex items-center row justify-center">
-        <div class="col-12 md:col-10">
-          <h1 class="mb-4 text-left my-6" set:html={markdownify(title)} />
-          <div class="content mb-16 text-left">
-            <Content />
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="section " >
+    <h2 set:html={markdownify(title)} class="container my-6 text-left" />
+    <article class="text-center">
+        <Content />
+    </article>
   </section>
 
   <!-- Features -->
@@ -32,10 +26,10 @@ const { feature, teams, title, description, image } = entry.data;
       <div class="text-center">
         <h2>{markdownify(feature!.title)}</h2>
       </div>
-      <div class="mt-8 grid gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid mt-8 gap-x-8 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
         {
           feature!.valeurs.map((item, i) => (
-            <div class="feature-card rounded-xl bg-white p-5 pb-8 text-center">
+            <div class="p-5 pb-8 text-center bg-white feature-card rounded-xl">
               {item.icon && (
                 <img
                   class="mx-auto"
@@ -56,11 +50,11 @@ const { feature, teams, title, description, image } = entry.data;
     </div>
   </section>
 
-  <article class="flow text-center">
+  <article class="text-center flow">
     <h2>Notre équipe</h2>
     <p>Voici toute l'équipe du groupe Capria qui vous accueilleront chaleureusement avec un grand sourire.</p>
     <div class="team">
-      <ul class="auto-grid" role="list">
+      <ul class={"grid grid-cols-"+teams.length} role="list">
         {
           teams?.map((team, i) => (
             <li>
@@ -75,4 +69,4 @@ const { feature, teams, title, description, image } = entry.data;
       </ul>
     </div>
   </article>
-</Base> 
+</Base>
