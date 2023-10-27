@@ -54,7 +54,7 @@ const { feature, teams, title, description, image } = entry.data;
     <h2>Notre équipe</h2>
     <p>Voici toute l'équipe du groupe Capria qui vous accueilleront chaleureusement avec un grand sourire.</p>
     <div class="team">
-      <ul class={"grid grid-cols-"+teams.length} role="list">
+      <ul class="grid grid-cols-4" role="list">
         {
           teams?.map((team, i) => (
             <li>
